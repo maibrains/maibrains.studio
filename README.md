@@ -1,1 +1,4 @@
-# maibrains.github.io
+# maibrains.github.io 
+```shell
+$ npx http-server ./
+```
