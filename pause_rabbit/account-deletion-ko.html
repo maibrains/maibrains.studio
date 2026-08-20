@@ -3,33 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>계정 삭제 요청 - PauseRabbit</title>
+    <title>계정 및 데이터 삭제 안내 - Pause Rabbit</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.4rem; }
-        h2 { font-size: 1.1rem; margin-top: 2rem; }
-        p, li { font-size: 0.95rem; }
-        a.btn { display: inline-block; margin-top: 1rem; padding: 12px 24px; background: #333; color: #fff; text-decoration: none; border-radius: 6px; }
+        html { color-scheme: light; }
+        html[data-theme="dark"] { color-scheme: dark; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; line-height: 1.65; color: #333; background: #fff; }
+        h1 { font-size: 1.5rem; }
+        h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+        p, li, th, td { font-size: 0.95rem; }
+        table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1rem 0; }
+        th, td { min-width: 8rem; padding: 0.65rem; border: 1px solid #ddd; text-align: left; vertical-align: top; }
+        th { background: #f6f6f6; }
+        a { color: #2457c5; }
+        .date { color: #666; font-size: 0.85rem; }
+        .language { text-align: right; font-size: 0.85rem; }
+        .theme-toggle { padding: 0; border: 0; color: #2457c5; background: transparent; font: inherit; text-decoration: underline; cursor: pointer; }
+        html[data-theme="dark"] body { color: #e5e5e5; background: #1b1b1b; }
+        html[data-theme="dark"] a, html[data-theme="dark"] .theme-toggle { color: #8ab4f8; }
+        html[data-theme="dark"] .date { color: #aaa; }
+        html[data-theme="dark"] th, html[data-theme="dark"] td { border-color: #555; }
+        html[data-theme="dark"] th { background: #2c2c2c; }
     </style>
 </head>
 <body>
-<p style="text-align:right;font-size:0.85rem;"><a href="account-deletion-en.html">English</a></p>
-<h1>계정 및 데이터 삭제 요청</h1>
+<p class="language"><button type="button" class="theme-toggle" data-dark-label="다크 모드" data-light-label="라이트 모드">다크 모드</button> · <a href="account-deletion-en.html">English</a></p>
+<h1>Pause Rabbit 계정 및 데이터 삭제 안내</h1>
+<p class="date">시행일: 2026년 8월 15일</p>
+<p>이 문서는 Pause Rabbit 계정과 관련 데이터의 삭제 요청 방법, 삭제되는 정보 및 법령에 따라 보관되는 정보를 안내한다.</p>
 
-<h2>앱 데이터 삭제</h2>
-<p>PauseRabbit의 모든 데이터는 사용자의 기기에만 저장됩니다. 앱을 삭제(언인스톨)하면 모든 설정과 사용 기록이 즉시 삭제됩니다.</p>
+<h2>회원 계정 삭제 방법</h2>
+<ol><li>Pause Rabbit 앱을 연다.</li><li><strong>설정 &gt; 계정 &gt; 회원 탈퇴</strong>를 선택한다.</li><li>화면에 표시된 구독, 환불, 잔여 티켓 및 데이터 삭제 내용을 확인한다.</li><li>필요한 본인 확인과 최종 확인을 완료한다.</li></ol>
+<p>앱에 접근할 수 없으면 contact@maibrains.studio로 계정에 사용한 이메일 주소와 계정 삭제 요청을 보낸다. 운영자는 다른 사람이 계정을 삭제하지 못하도록 필요한 최소한의 본인 확인을 요청할 수 있다. 이메일로 비밀번호나 Google 인증 토큰을 보내서는 안 된다.</p>
 
-<h2>삭제 요청</h2>
-<p>추가적인 데이터 삭제 또는 계정 삭제를 요청하시려면 아래 이메일로 연락해 주세요. 요청 접수 후 영업일 기준 7일 이내에 처리됩니다.</p>
+<h2>게스트 데이터 삭제 방법</h2>
+<p>게스트의 일시정지 일정·메모 등 서비스 기능 데이터는 원칙적으로 기기에 저장된다. Android 설정에서 Pause Rabbit의 저장공간 또는 앱 데이터를 삭제하거나 앱을 제거하면 로컬 기능 데이터가 삭제된다. 회원 계정과 연결되지 않은 이 데이터는 운영자가 원격으로 복원하거나 삭제할 수 없다. 광고·분석·오류 진단 등 외부 SDK의 기술 데이터는 <a href="privacy-policy-ko.html">개인정보처리방침</a>과 각 외부 서비스의 설정에 따라 처리된다.</p>
 
-<ul>
-    <li>이메일 제목: <strong>[PauseRabbit] 계정/데이터 삭제 요청</strong></li>
-    <li>본문에 포함할 정보: 사용 중인 이메일 주소 또는 식별 가능한 정보</li>
-</ul>
+<h2>삭제 전 확인할 사항</h2>
+<ul><li>활성·일시정지·결제 처리 중인 구독은 다음 자동 갱신이 취소되도록 처리한다. Google Play의 구독 관리 화면에서도 취소 상태를 확인한다.</li><li>하나의 구매로 받은 유료 티켓이 전부 미사용이면 자동 환불을 시도할 수 있다. 일부 사용, 환불기간 경과 또는 Google Play 조건 미충족 시 자동 환불되지 않을 수 있다.</li><li>환불 결과가 실패하거나 확정되지 않아도 계정 삭제는 진행한다. 환불·티켓 확인과 법적 의무에 필요한 최소 정보만 분리 보관하고, 환불은 계정 삭제와 별도로 처리한다.</li><li>자동 환불 여부와 별개로 관계 법령 또는 Google Play 정책에 따른 환불 요청 권리는 유지된다.</li></ul>
 
-<a class="btn" href="mailto:maibrains.studio@gmail.com?subject=[PauseRabbit] 계정/데이터 삭제 요청">삭제 요청 이메일 보내기</a>
+<h2>계정 삭제 시 처리</h2>
+<p>계정 삭제가 완료되면 다음 정보는 서비스 운영 영역에서 삭제하거나 계정과 연결할 수 없도록 처리한다.</p>
+<ul><li>활성 회원 상태와 서비스 접근 권한</li><li>등록 기기의 부가 정보와 동기화된 기능 데이터의 내용</li><li>무료로 지급된 티켓과 관련 기록</li><li>향후 마케팅 발송 대상 상태</li></ul>
+<p>거래기록, 환불 처리와 유효한 잔여 유료 티켓의 소유권 확인에 필요한 최소 식별정보는 아래 기준에 따라 활성 회원 정보와 분리하여 보관한다.</p>
+<p>기기의 설치 앱 목록, 일시정지 앱·일정·메모와 로컬 상태는 앱 데이터 삭제 또는 앱 제거로 함께 삭제할 수 있다. 계정 삭제만으로 기기에 남은 로컬 데이터가 모두 제거되지 않을 수 있다.</p>
+<p>Google 계정 자체는 삭제되지 않는다. Google 계정의 연결 해제와 권한 관리는 Google 계정 설정에서 별도로 할 수 있다.</p>
 
-<h2>삭제 범위</h2>
-<p>앱은 서버에 개인정보를 저장하지 않으므로, 앱 삭제 시 기기 내 모든 데이터가 완전히 제거됩니다. 인앱 구매 내역은 Google Play에서 관리되며, Google Play 구독 관리 페이지에서 별도로 해지할 수 있습니다.</p>
+<h2>탈퇴 후 분리 보관되는 정보</h2>
+<table><thead><tr><th>정보</th><th>기간</th><th>사유</th></tr></thead><tbody>
+    <tr><td>계약·청약철회 기록</td><td>5년</td><td>전자상거래 법적 의무 및 권리 보호</td></tr>
+    <tr><td>대금결제·서비스 공급 기록</td><td>5년</td><td>전자상거래 법적 의무 및 결제 분쟁 대응</td></tr>
+    <tr><td>자동 환불되지 않은 유효한 잔여 유료 티켓과 소유자 확인용 최소 식별정보</td><td>탈퇴일부터 5년. 환불·권리 포기·적법한 권리 소멸 시 조기 삭제</td><td>잔여 유료 권리 이행과 재가입 시 복원</td></tr>
+    <tr><td>표시·광고 기록</td><td>6개월</td><td>전자상거래 법적 의무</td></tr>
+    <tr><td>소비자 불만·분쟁 처리 기록</td><td>3년</td><td>전자상거래 법적 의무 및 분쟁 대응</td></tr>
+    <tr><td>거래·탈퇴·보안 처리 기록</td><td>탈퇴일부터 최대 5년. 이후 계정과 연결할 수 없도록 처리</td><td>거래·권리·보안 사건 확인</td></tr>
+    <tr><td>계정 탈퇴 당시의 마케팅 수신 동의 시각</td><td>탈퇴일부터 6개월</td><td>동의 처리 증빙</td></tr>
+    <tr><td>선택한 탈퇴 사유, 개선 의견과 후속 연락 동의</td><td>분석·연락 목적 달성 또는 동의 철회 시까지, 최대 1년</td><td>서비스 개선과 동의한 후속 연락</td></tr>
+</tbody></table>
+<p>탈퇴 즉시 향후 마케팅 발송 대상에서 제외한다. 선택한 탈퇴 사유, 개선 의견과 후속 연락 동의는 contact@maibrains.studio로 철회를 요청할 수 있다. 보관 정보는 활성 회원 정보와 분리하고 정해진 목적에만 이용한다. 같은 Google 계정으로 탈퇴일부터 5년 안에 다시 가입하면 본인과 권리의 유효성을 확인한 뒤 보관 중인 잔여 유료 티켓을 복원할 수 있다. 5년 후에는 별도 법적 보관 사유가 없는 한 최소 식별정보와 잔여 티켓을 삭제 또는 복구할 수 없도록 처리한다.</p>
+
+<h2>처리 결과와 문의</h2>
+<p>운영자는 요청자의 신원을 확인한 뒤 적용 법령이 정한 기한 안에 처리 결과를 알린다. 법적 보관 의무, 진행 중인 결제·분쟁, 타인의 권리 보호 등으로 일부 정보를 즉시 삭제할 수 없으면 보관 항목, 사유와 기간을 안내한다.</p>
+<p>계정 삭제, 보관 정보, 환불 또는 개인정보 권리 행사 문의는 이메일(contact@maibrains.studio)로만 접수한다.</p>
+
+<h2>운영자 정보</h2>
+<ul><li>운영자: 마이브레인즈(대표 허현범)</li><li>통신판매업 신고번호: 2025-부산사하-0220</li><li>이메일: contact@maibrains.studio</li><li>전화: 010-5692-6129</li><li>주소: (49504) 부산광역시 사하구 다대낙조2길 11 104-705</li></ul>
+<script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem('pause-rabbit-theme', theme);
+        themeToggle.textContent = theme === 'dark' ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel;
+    };
+    applyTheme(localStorage.getItem('pause-rabbit-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    themeToggle.addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+</script>
 </body>
 </html>

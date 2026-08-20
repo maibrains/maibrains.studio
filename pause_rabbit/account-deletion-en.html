@@ -3,33 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Deletion Request - PauseRabbit</title>
+    <title>Account and Data Deletion Guide - Pause Rabbit</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.4rem; }
-        h2 { font-size: 1.1rem; margin-top: 2rem; }
-        p, li { font-size: 0.95rem; }
-        a.btn { display: inline-block; margin-top: 1rem; padding: 12px 24px; background: #333; color: #fff; text-decoration: none; border-radius: 6px; }
+        html { color-scheme: light; }
+        html[data-theme="dark"] { color-scheme: dark; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; line-height: 1.65; color: #333; background: #fff; }
+        h1 { font-size: 1.5rem; }
+        h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+        p, li, th, td { font-size: 0.95rem; }
+        table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1rem 0; }
+        th, td { min-width: 8rem; padding: 0.65rem; border: 1px solid #ddd; text-align: left; vertical-align: top; }
+        th { background: #f6f6f6; }
+        a { color: #2457c5; }
+        .date { color: #666; font-size: 0.85rem; }
+        .language { text-align: right; font-size: 0.85rem; }
+        .theme-toggle { padding: 0; border: 0; color: #2457c5; background: transparent; font: inherit; text-decoration: underline; cursor: pointer; }
+        html[data-theme="dark"] body { color: #e5e5e5; background: #1b1b1b; }
+        html[data-theme="dark"] a, html[data-theme="dark"] .theme-toggle { color: #8ab4f8; }
+        html[data-theme="dark"] .date { color: #aaa; }
+        html[data-theme="dark"] th, html[data-theme="dark"] td { border-color: #555; }
+        html[data-theme="dark"] th { background: #2c2c2c; }
     </style>
 </head>
 <body>
-<p style="text-align:right;font-size:0.85rem;"><a href="account-deletion-ko.html">한국어</a></p>
-<h1>Account and Data Deletion Request</h1>
+<p class="language"><button type="button" class="theme-toggle" data-dark-label="Dark mode" data-light-label="Light mode">Dark mode</button> · <a href="account-deletion-ko.html">한국어</a></p>
+<h1>Pause Rabbit Account and Data Deletion Guide</h1>
+<p class="date">Effective date: August 15, 2026</p>
+<p>This guide explains how to request deletion of a Pause Rabbit account and related data, which information is deleted, and which information is retained as required by law.</p>
 
-<h2>Deleting App Data</h2>
-<p>All PauseRabbit data is stored locally on your device. Uninstalling the app immediately removes all settings and usage records.</p>
+<h2>How Members Delete Their Accounts</h2>
+<ol><li>Open Pause Rabbit.</li><li>In Settings, select <strong>Delete Membership</strong> under <strong>Account</strong>.</li><li>Review the information displayed about subscriptions, refunds, remaining Tickets, and data deletion.</li><li>Complete any required identity verification and final confirmation.</li></ol>
+<p>If the app cannot be accessed, email contact@maibrains.studio with the email address used for the account and a request for account deletion. To prevent another person from deleting an account, the Operator may request the minimum necessary identity verification. Do not send a password or Google authentication token by email.</p>
 
-<h2>Deletion Request</h2>
-<p>If you would like to request additional data or account deletion, please contact us via the email below. Requests will be processed within 7 business days.</p>
+<h2>How to Delete Guest Data</h2>
+<p>Guest Service data, such as Pause schedules and notes, is generally stored on the device. Clear Pause Rabbit storage or app data in Android settings, or uninstall the app, to delete local Service data. The Operator cannot remotely restore or delete this data because it is not linked to a Member account. Technical data processed by external SDKs for advertising, analytics, and crash diagnostics is handled under the <a href="privacy-policy-en.html">Privacy Policy</a> and each external service’s settings.</p>
 
-<ul>
-    <li>Email subject: <strong>[PauseRabbit] Account/Data Deletion Request</strong></li>
-    <li>Include in body: your email address or identifiable information</li>
-</ul>
+<h2>Points to Review Before Account Deletion</h2>
+<ul><li>For active, paused, or payment-processing subscriptions, the Operator processes cancellation of the next automatic renewal. Also confirm the cancellation status in Google Play subscription management.</li><li>If all Paid Tickets issued by a single purchase are unused, the system may attempt an automatic refund. An automatic refund may not be made if any Ticket has been used, the refund period has passed, or Google Play conditions are not met.</li><li>Account deletion proceeds even if a refund fails or has not been finalized. Only the minimum information necessary for refund and Ticket verification and legal obligations is retained separately, and refunds are processed separately from account deletion.</li><li>Regardless of automatic-refund eligibility, rights to request a refund under applicable law or Google Play policy remain available.</li></ul>
 
-<a class="btn" href="mailto:maibrains.studio@gmail.com?subject=[PauseRabbit] Account/Data Deletion Request">Send Deletion Request Email</a>
+<h2>What Happens When an Account Is Deleted</h2>
+<p>After account deletion is completed, the following information is deleted from the Service’s operating environment or processed so that it can no longer be linked to the account:</p>
+<ul><li>Active Member status and access to the Service</li><li>Additional registered-device information and the contents of synchronized Service data</li><li>Free Tickets and related records</li><li>Future marketing-recipient status</li></ul>
+<p>The minimum identifiers needed for transaction records, refund processing, and verification of ownership of valid remaining Paid Tickets are retained separately from active Member information under the standards below.</p>
+<p>Installed-app lists, paused apps, schedules, notes, and local state on the device can be deleted by clearing app data or uninstalling the app. Account deletion alone may not remove all local data remaining on the device.</p>
+<p>The Google Account itself is not deleted. Management of the Google Account’s connection to the Service and permissions is available separately in Google Account settings.</p>
 
-<h2>Scope of Deletion</h2>
-<p>The app does not store personal data on any server. Uninstalling the app completely removes all data from your device. In-app purchase history is managed by Google Play and can be canceled separately from the Google Play subscription management page.</p>
+<h2>Information Retained Separately After Account Deletion</h2>
+<table><thead><tr><th>Information</th><th>Period</th><th>Reason</th></tr></thead><tbody>
+    <tr><td>Contract and withdrawal records</td><td>5 years</td><td>E-commerce legal obligations and protection of rights</td></tr>
+    <tr><td>Payment and service-supply records</td><td>5 years</td><td>E-commerce legal obligations and payment-dispute response</td></tr>
+    <tr><td>Valid remaining Paid Tickets that were not automatically refunded, and the minimum identifiers needed to identify their owner</td><td>5 years from account deletion. Earlier deletion applies upon a refund, waiver of rights, or lawful expiration of rights</td><td>Fulfillment of remaining paid rights and restoration if the user signs up again</td></tr>
+    <tr><td>Display and advertising records</td><td>6 months</td><td>E-commerce legal obligations</td></tr>
+    <tr><td>Consumer-complaint and dispute-resolution records</td><td>3 years</td><td>E-commerce legal obligations and dispute response</td></tr>
+    <tr><td>Transaction, account-deletion, and security records</td><td>Up to 5 years from account deletion, then processed so they can no longer be linked to the account</td><td>Verification of transaction, rights, and security events</td></tr>
+    <tr><td>Marketing-consent timestamp held when the account is deleted</td><td>6 months from account deletion</td><td>Evidence of consent processing</td></tr>
+    <tr><td>Selected deletion reason, optional feedback, and follow-up consent</td><td>Until the analysis or contact purpose is fulfilled or consent is withdrawn, up to 1 year</td><td>Service improvement and consented follow-up contact</td></tr>
+</tbody></table>
+<p>The account is removed from all future marketing-recipient lists immediately upon deletion. Withdrawal of the selected deletion reason, optional feedback, or follow-up consent may be requested at contact@maibrains.studio. Retained information is separated from active Member information and used only for the specified purpose. If the user signs up again with the same Google Account within 5 years from account deletion, the Operator may restore retained remaining Paid Tickets after verifying the user’s identity and the validity of the right. After 5 years, the minimum identifying information and remaining Paid Tickets are deleted or made non-restorable unless another legal ground requires retention.</p>
+
+<h2>Outcome and Contact</h2>
+<p>After verifying the requester’s identity, the Operator notifies the requester of the outcome within the period required by applicable law. If some information cannot be deleted immediately because of a legal retention obligation, an ongoing payment or dispute, or protection of another person’s rights, the Operator explains the retained information, reason, and period.</p>
+<p>Questions about account deletion, retained information, refunds, or the exercise of personal-information rights must be submitted only by email to contact@maibrains.studio.</p>
+
+<h2>Operator Information</h2>
+<ul><li>Operator: Maibrains, represented by Huh Hyun-beom</li><li>Mail-order sales registration number: 2025-부산사하-0220</li><li>Email: contact@maibrains.studio</li><li>Telephone: +82 10-5692-6129</li><li>Address: Room 104-705, 11, Dadaenakjo 2-gil, Saha-gu, Busan 49504, Republic of Korea</li></ul>
+<script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem('pause-rabbit-theme', theme);
+        themeToggle.textContent = theme === 'dark' ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel;
+    };
+    applyTheme(localStorage.getItem('pause-rabbit-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    themeToggle.addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+</script>
 </body>
 </html>

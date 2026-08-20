@@ -3,38 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - PauseRabbit</title>
+    <title>Privacy Policy - Pause Rabbit</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.4rem; }
-        h2 { font-size: 1.1rem; margin-top: 2rem; }
-        p, li { font-size: 0.95rem; }
+        html { color-scheme: light; }
+        html[data-theme="dark"] { color-scheme: dark; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; line-height: 1.65; color: #333; background: #fff; }
+        h1 { font-size: 1.5rem; }
+        h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+        h3 { font-size: 1rem; margin-top: 1.6rem; }
+        p, li, th, td { font-size: 0.95rem; }
+        table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1rem 0; }
+        th, td { min-width: 8rem; padding: 0.65rem; border: 1px solid #ddd; text-align: left; vertical-align: top; }
+        th { background: #f6f6f6; }
+        code { padding: 0.1rem 0.25rem; background: #f3f3f3; border-radius: 3px; }
+        a { color: #2457c5; }
         .date { color: #666; font-size: 0.85rem; }
+        .language { text-align: right; font-size: 0.85rem; }
+        .theme-toggle { padding: 0; border: 0; color: #2457c5; background: transparent; font: inherit; text-decoration: underline; cursor: pointer; }
+        html[data-theme="dark"] body { color: #e5e5e5; background: #1b1b1b; }
+        html[data-theme="dark"] a, html[data-theme="dark"] .theme-toggle { color: #8ab4f8; }
+        html[data-theme="dark"] .date { color: #aaa; }
+        html[data-theme="dark"] th, html[data-theme="dark"] td { border-color: #555; }
+        html[data-theme="dark"] th, html[data-theme="dark"] code { background: #2c2c2c; }
     </style>
 </head>
 <body>
-<p style="text-align:right;font-size:0.85rem;"><a href="privacy-policy-ko.html">한국어</a></p>
-<h1>Privacy Policy</h1>
-<p class="date">Effective date: July 31, 2025</p>
+<p class="language"><button type="button" class="theme-toggle" data-dark-label="Dark mode" data-light-label="Light mode">Dark mode</button> · <a href="privacy-policy-ko.html">한국어</a></p>
+<h1>Pause Rabbit Privacy Policy</h1>
+<p class="date">Effective date: August 15, 2026</p>
 
-<p>maibrains studio ("Developer") operates PauseRabbit ("App"). This policy describes how we handle user information.</p>
+<p>Maibrains (the “Controller”) publishes this Privacy Policy to comply with the Personal Information Protection Act and other applicable laws and to process users’ personal information safely while providing the Pause Rabbit service.</p>
 
-<h2>1. Information We Collect</h2>
-<p>The App does not require account registration and does not collect personal information transmitted to any server. All settings and usage data are stored locally on the user's device only.</p>
+<h2>1. Personal Information Processed and Purposes</h2>
+<h3>Account and Service Operations</h3>
+<table>
+    <thead><tr><th>Category</th><th>Information Processed</th><th>Purpose</th></tr></thead>
+    <tbody>
+        <tr><td>Google sign-in</td><td>Google account identifier, email address, authentication provider information, authentication token</td><td>Identity verification, account creation and sign-in</td></tr>
+        <tr><td>Account</td><td>Internal member identifier, membership tier, registration, modification and withdrawal times</td><td>Account management, access rights and withdrawal processing</td></tr>
+        <tr><td>Device</td><td>Device identifier, model name, user-defined device nickname, app and operating-system versions</td><td>Device connection, synchronization and troubleshooting</td></tr>
+        <tr><td>Paid services</td><td>Product, purchase and subscription identifiers; reference value or hash of an order or purchase token; payment and refund status and times; ticket issuance, use and balance records</td><td>Purchase verification, subscriptions and tickets, refunds and fraud prevention</td></tr>
+        <tr><td>Customer support</td><td>Email address, inquiry and response content, attachments, complaints, disputes and handling records</td><td>Responding to inquiries, rights requests and disputes</td></tr>
+        <tr><td>Account deletion</td><td>Reason for deletion, optional improvement feedback and consent to follow-up contact, deletion records</td><td>Account deletion and, where consented, service improvement and follow-up contact</td></tr>
+        <tr><td>Security and operations</td><td>Access time, IP address, network and device information, requests, responses, errors and security events</td><td>Service security, incident analysis and fraud prevention</td></tr>
+    </tbody>
+</table>
+<p>Google authentication tokens are processed only as needed for sign-in and session maintenance. The Controller does not collect Google passwords or full payment-method details.</p>
 
-<h2>2. Accessibility Service Usage</h2>
-<p>The App uses the Android Accessibility Service to detect the package name of the currently running app in order to enforce user-configured blocking schedules. It does not collect screen content or user input. Detected information is not transmitted externally.</p>
+<h3>Feature Data Stored on the Device</h3>
+<p>The following information is processed on the user’s device for core functionality and is not transmitted to the Controller’s server unless it is separately synchronized or attached to a support inquiry.</p>
+<table>
+    <thead><tr><th>Information</th><th>Purpose</th></tr></thead>
+    <tbody>
+        <tr><td>List of installed apps, including app names, package identifiers and icons</td><td>Selecting and displaying apps to pause</td></tr>
+        <tr><td>Selected apps, days, times, periods, notes and schedules</td><td>Running pauses</td></tr>
+        <tr><td>Current pause status and local ticket status</td><td>Feature recovery and offline processing</td></tr>
+        <tr><td>Package identifier of the current app detected through the accessibility service</td><td>Determining whether a selected app is running and displaying the restriction screen</td></tr>
+        <tr><td>Privacy-region information</td><td>Determining the applicable region, blocking remote diagnostics collection, and providing advertising privacy settings</td></tr>
+    </tbody>
+</table>
+<p>The service does not use the accessibility service to collect screen content, keystrokes, message content or passwords. Local data may be deleted when app data is cleared or the app is removed, and the operating system may process it separately under the device backup policy.</p>
 
-<h2>3. Third-Party Sharing</h2>
-<p>We do not share any user data with third parties.</p>
+<h3>Analytics, Advertising and Stability Information</h3>
+<table>
+    <thead><tr><th>Service</th><th>Information That May Be Processed</th><th>Purpose</th></tr></thead>
+    <tbody>
+        <tr><td>Firebase Crashlytics</td><td>Installation identifier, error and crash information, device, app and operating-system information, technical logs at the time of a crash</td><td>Crash analysis and stability improvements</td></tr>
+        <tr><td>Firebase Analytics</td><td>App-instance and installation identifiers, app usage events, device, app and approximate location information</td><td>Service usage analysis and improvement</td></tr>
+        <tr><td>Firebase Performance</td><td>Installation identifier, IP address, network requests and performance metrics, device and app information</td><td>Speed and network-performance improvements</td></tr>
+        <tr><td>Firebase Installations and Sessions</td><td>App installation and session identifiers and technical information</td><td>Providing Firebase features and managing sessions and installations</td></tr>
+        <tr><td>Google AdMob</td><td>Permitted device identifiers such as advertising identifiers or app-set identifiers, IP address, ad requests, impressions, views and rewards, consent choices, device and app information</td><td>Advertising consent management, rewarded ads, ad measurement and fraud prevention</td></tr>
+        <tr><td>Google Play Integrity</td><td>App, device and account integrity verdicts and request information</td><td>Preventing tampering, automation and fraudulent payments</td></tr>
+    </tbody>
+</table>
+<p>The Controller does not intentionally add account, device or purchase identifiers, authentication tokens, installed-app lists, schedules, notes or accessibility data to custom Firebase events. In regions where consent is required for advertising or optional analytics, information is processed only within the scope consented to, and regions that are not ready may be excluded from distribution. In the EEA and UK, and when the region cannot be determined, remote collection by Analytics, Performance and Crashlytics is not enabled.</p>
 
-<h2>4. Data Retention and Deletion</h2>
-<p>Uninstalling the App removes all locally stored data from the device.</p>
+<h2>2. Legal Bases for Processing</h2>
+<p>The Controller processes personal information under the applicable legal basis below.</p>
+<ul>
+    <li>Account authentication, core features, purchases, refunds and customer support: entering into and performing a contract with the user</li>
+    <li>Tax and e-commerce records and responses to legal requests: compliance with legal obligations</li>
+    <li>Marketing emails, optional analytics and personalized ads, and optional post-withdrawal contact: user consent</li>
+    <li>Security, incident analysis and non-personalized service improvement: the Controller’s legitimate interests after giving priority to users’ rights</li>
+    <li>Protection of life or physical safety in an emergency, or another basis permitted by law</li>
+</ul>
+<p>Consent-based processing may be withdrawn, without affecting the lawfulness of processing before withdrawal. Where Firebase Analytics or advertising-identifier processing requires consent, it does not begin before optional consent is given. Where stability processing such as Crashlytics or Performance is based on legitimate interests, only the minimum technical information is processed, users may object, and consent is obtained if local law requires it.</p>
+<p>A Google account identifier and email address are required to register, purchase information is required for paid features, and device identifiers are required to connect devices. Without this information, the relevant features cannot be provided. Marketing, optional analytics and advertising, and account-deletion feedback are optional, and refusing them does not disadvantage use of the core service.</p>
 
-<h2>5. User Rights</h2>
-<p>Users may uninstall the App at any time to delete all data, or request account and data deletion via email.</p>
+<h2>3. Retention Periods</h2>
+<p>The Controller deletes personal information without delay when its purpose has been fulfilled or the account is deleted. The following information is retained separately where required by law or to protect users’ rights.</p>
+<table>
+    <thead><tr><th>Information</th><th>Retention Period</th></tr></thead>
+    <tbody>
+        <tr><td>Records concerning contracts or withdrawal of offers</td><td>5 years</td></tr>
+        <tr><td>Records concerning payment and supply of services</td><td>5 years</td></tr>
+        <tr><td>Valid paid tickets not automatically refunded and the minimum identifiers needed to verify ownership</td><td>5 years from account deletion; deleted earlier if refunded, waived or lawfully extinguished</td></tr>
+        <tr><td>Records concerning labels and advertising</td><td>6 months</td></tr>
+        <tr><td>Records concerning consumer complaints or dispute resolution</td><td>3 years</td></tr>
+        <tr><td>Transaction, account-deletion, and security records</td><td>Up to 5 years from account deletion, then processed so they can no longer be linked to the account</td></tr>
+        <tr><td>Marketing-consent timestamp held when the account is deleted</td><td>6 months from account deletion</td></tr>
+        <tr><td>Optional account-deletion feedback and follow-up consent</td><td>Until the analysis or contact purpose is fulfilled or consent is withdrawn, up to 1 year</td></tr>
+    </tbody>
+</table>
+<p>The account is removed from all future marketing-recipient lists immediately upon deletion. A marketing-consent timestamp remaining in the deleted-account area is used only as evidence and deleted after 6 months. The selected deletion reason, optional feedback and follow-up consent are deleted earlier when the purpose is fulfilled or consent is withdrawn, and in all cases are removed from identifiable records after 1 year.</p>
+<p>The default retention periods for service-specific technical data are as follows. If an actual legal retention obligation or security investigation requires longer retention, the minimum necessary information is separated for that purpose.</p>
+<ul>
+    <li>Firebase Analytics user and event data: 2 months by default, subject to the actual Service setting. Aggregated reports may not be subject to this setting.</li>
+    <li>Firebase Crashlytics crash data: generally 90 days.</li>
+    <li>Firebase Performance: performance events linked to IP addresses are generally retained for 30 days, and information linked to installation identifiers for 60 days.</li>
+    <li>Records and backups held by external services such as Google Play, AdMob and Supabase: according to each service’s settings, contracts and legal obligations.</li>
+</ul>
 
-<h2>6. Contact</h2>
-<p>For privacy inquiries: <a href="mailto:maibrains.studio@gmail.com">maibrains.studio@gmail.com</a></p>
+<h2>4. Deletion of Personal Information</h2>
+<ol>
+    <li>When a retention period ends or a processing purpose is fulfilled, information is deleted so that it cannot be recovered or reproduced.</li>
+    <li>Electronic files are securely deleted or made inaccessible.</li>
+    <li>Information retained by law is logically or physically separated from active service information and access is restricted.</li>
+    <li>Information remaining in backups is deleted according to the established backup-rotation cycle, and deletion status is reapplied after restoration.</li>
+</ol>
+
+<h2>5. Paid Tickets After Account Deletion</h2>
+<p>Valid paid tickets that are not automatically refunded when an account is deleted are retained separately from statutory transaction records for 5 years, together with the minimum identifiers needed to verify ownership, to fulfill the user’s property rights. If the user registers again with the same Google Account within 5 years, the remaining balance may be restored after verifying identity and the validity of the right. The information is deleted earlier if the tickets are refunded, the user waives the right or the right is lawfully extinguished. After 5 years, it is deleted or made irrecoverable unless there is another ground for retention, such as a legal dispute.</p>
+
+<h2>6. Processors</h2>
+<p>The Controller entrusts the following tasks only as necessary to provide the service. Contracts are used to manage prohibitions on processing beyond the stated purpose, security measures, subprocessors and deletion at termination.</p>
+<table>
+    <thead><tr><th>Processor</th><th>Entrusted Tasks</th></tr></thead>
+    <tbody>
+        <tr><td>Supabase, Inc.</td><td>Member authentication, database, server functions, logs, backups and security operations</td></tr>
+        <tr><td>Google LLC and affiliates</td><td>Google Sign-In and Firebase stability, analytics and performance services</td></tr>
+        <tr><td>주식회사 에이엑스지 (Daum Smartwork)</td><td>Sending and receiving email through <code>contact@maibrains.studio</code>, and managing mailboxes and attachments</td></tr>
+    </tbody>
+</table>
+
+<h2>7. Independently Controlled Third-Party Services</h2>
+<p>The Controller does not sell personal information. The following services may process information independently based on their direct relationship with users, legal obligations or service-operation purposes. If the Controller’s activity constitutes a disclosure of personal information to a third party and consent is required, the recipient, purpose, information, retention period and consequences of refusal will be disclosed separately and consent obtained.</p>
+<table>
+    <thead><tr><th>Provider and Service</th><th>Information That May Be Processed</th><th>Purpose and Retention</th></tr></thead>
+    <tbody>
+        <tr><td>Google LLC - Google Play and Play Integrity</td><td>Google Account, order, purchase, subscription and refund information, and device and account integrity verdicts and request information</td><td>Payments, subscriptions, refunds, integrity verification and fraud prevention; according to Google’s policies and legal retention periods</td></tr>
+        <tr><td>Google LLC - AdMob</td><td>Advertising, app and device identifiers, IP address, ad requests, impressions, interactions and rewards, consent choices</td><td>Ad delivery and measurement, consent management and fraud prevention; according to Google’s policies and advertising settings</td></tr>
+    </tbody>
+</table>
+<p>For details and ways to contact Google, see the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
+
+<h2>8. International Transfers</h2>
+<p>Because the Service uses external services provided globally, personal information may be processed outside the user’s country as described below.</p>
+<table>
+    <thead><tr><th>Recipient and Related Information</th><th>Country, Timing and Method</th><th>Information and Purpose</th><th>Retention</th></tr></thead>
+    <tbody>
+        <tr><td>Supabase, Inc. and disclosed subprocessors (<a href="https://supabase.com/privacy">privacy information</a>)</td><td>Information is transmitted over the network when the Service is used. Countries of storage and processing for support, security and backups depend on the Supabase Service settings and disclosed subprocessor information.</td><td>Hosting, authentication, security and support for Member, device, purchase, Ticket and operational data</td><td>During account use and the periods in Section 3, followed by the contractual backup cycle</td></tr>
+        <tr><td>Google LLC, its affiliates and subprocessors (<a href="https://policies.google.com/privacy?hl=en">privacy information</a>)</td><td>Transferred over the network to the United States and countries where Google data centers are located when a feature is used</td><td>Processing sign-in, payment, integrity, analytics, crash, performance, installation, session, advertising and consent data</td><td>The service-specific periods in Section 3 and periods under Google’s policies and settings</td></tr>
+    </tbody>
+</table>
+<p>International transfers are made as necessary to perform Service contracts, with separate user consent, or under another basis permitted by applicable law, together with necessary safeguards. Optional international transfers may be refused by withdrawing consent in the relevant settings. Refusal of a transfer essential to the core Service may prevent features such as account sign-in or payment verification; where available, the user may request account deletion.</p>
+<p>External providers may change their subprocessors and data-center countries. If important details such as the recipient, country, information or purpose change, the Controller provides advance notice as required by applicable law and obtains consent before the change where separate consent is required.</p>
+
+<h2>9. Marketing Emails</h2>
+<p>Marketing emails are sent only to Members who separately consent. The email address, internal Member identifier, and current consent status and time are used to send discounts, events and service news and apply the current consent status.</p>
+<p>Users may change their choice at any time under <code>[Settings &gt; Terms and Policies &gt; Marketing Policy]</code>. Advertising emails include advertising labels required by law, Maibrains’ name, email address, telephone number and address, Korean and English opt-out guidance, and an easy withdrawal method. No fee is charged for opting out; the recipient is excluded from future messages immediately after the request is received and is notified of the result. At intervals required by law, the Controller reminds users of their marketing consent together with the consent date, sender, and ways to maintain or withdraw consent.</p>
+
+<h2>10. User Rights and How to Exercise Them</h2>
+<p>Users may exercise the following rights under applicable law.</p>
+<ul>
+    <li>Confirm whether personal information is processed, access it and receive a copy</li>
+    <li>Correct or supplement inaccurate information</li>
+    <li>Request deletion or suspension of processing</li>
+    <li>Withdraw consent</li>
+    <li>Where applicable, request an explanation of or object to an automated decision</li>
+</ul>
+<p>Requests may be submitted through the app settings or to contact@maibrains.studio. The Controller verifies the requester or duly authorized representative and responds within the time and procedure required by applicable law. If a lawful restriction applies, such as a legal retention obligation or protection of another person’s rights, the Controller explains the reason and available means of objection.</p>
+<p>Users in the Republic of Korea may request advice or dispute resolution from the Personal Information Infringement Report Center (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>, dial 118 without an area code), the Personal Information Dispute Mediation Committee (<a href="https://www.kopico.go.kr">kopico.go.kr</a>, 1833-6972), or the Personal Information Protection Commission.</p>
+
+<h2>11. Minors’ Personal Information</h2>
+<p>The Service is not directed to anyone under 18. If the Controller learns that a minor’s personal information was collected without meeting applicable requirements, including consent from a legal representative where required, it deletes information that is not subject to a legal retention obligation.</p>
+
+<h2>12. Security Measures</h2>
+<p>The Controller implements reasonable technical and organizational measures to prevent loss, theft, disclosure and alteration of personal information, including minimizing access rights, authentication and access controls, encryption in transit, log reviews, vulnerability and update management, and processor management.</p>
+
+<h2>13. Automatic Collection Technologies and Choice Management</h2>
+<p>The app and external SDKs may use mobile-device identifiers, including app installation, session and advertising identifiers, and local device storage. Privacy-region information is used to block remote diagnostics collection and provide advertising privacy settings, and is deleted when app data is cleared or the app is removed.</p>
+<p>Users may change permitted processing through the app’s privacy and advertising settings, the device’s advertising privacy and permission settings, and Google settings. Blocking essential storage may prevent session maintenance or security features from working.</p>
+
+<h2>14. Changes to This Policy</h2>
+<p>Changes to this Policy, including their effective date and material details, are generally announced through the service or a linked screen at least 7 days in advance. Material changes to user rights are generally announced at least 30 days in advance, and separate consent is obtained where required.</p>
+
+<h2>15. Controller Information</h2>
+<ul>
+    <li>Business name: Maibrains</li>
+    <li>Representative and Personal Information Protection Officer: Huh Hyun-beom</li>
+    <li>Business registration number: 864-43-01211</li>
+    <li>Mail-order sales registration number: 2025-부산사하-0220</li>
+    <li>Address: Room 104-705, 11, Dadaenakjo 2-gil, Saha-gu, Busan 49504, Republic of Korea</li>
+    <li>Telephone: +82 10-5692-6129</li>
+    <li>Email: contact@maibrains.studio</li>
+</ul>
+<p>Questions about the Service or personal information must be submitted only by email to contact@maibrains.studio.</p>
+
+<h2>Addendum</h2>
+<p>This Privacy Policy is effective as of August 15, 2026.</p>
+<script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        localStorage.setItem('pause-rabbit-theme', theme);
+        themeToggle.textContent = theme === 'dark' ? themeToggle.dataset.lightLabel : themeToggle.dataset.darkLabel;
+    };
+    applyTheme(localStorage.getItem('pause-rabbit-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    themeToggle.addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+</script>
 </body>
 </html>
