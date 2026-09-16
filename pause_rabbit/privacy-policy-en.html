@@ -41,14 +41,17 @@
     <tbody>
         <tr><td>Google sign-in</td><td>Google account identifier, email address, authentication provider information, authentication token</td><td>Identity verification, account creation and sign-in</td></tr>
         <tr><td>Account</td><td>Internal member identifier, membership tier, registration, modification and withdrawal times</td><td>Account management, access rights and withdrawal processing</td></tr>
-        <tr><td>Device</td><td>Device identifier, model name, user-defined device nickname, app and operating-system versions</td><td>Device connection, synchronization and troubleshooting</td></tr>
-        <tr><td>Paid services</td><td>Product, purchase and subscription identifiers; reference value or hash of an order or purchase token; payment and refund status and times; ticket issuance, use and balance records</td><td>Purchase verification, subscriptions and tickets, refunds and fraud prevention</td></tr>
+        <tr><td>Device</td><td>Device identifier, model name, user-defined device nickname, app and operating-system versions, free-ticket issuance processing records (the two most recent weeks)</td><td>Device connection, synchronization, troubleshooting and prevention of duplicate free-ticket issuance</td></tr>
+        <tr><td>Paid services</td><td>Product, purchase and subscription identifiers; order identifiers; purchase tokens (information used to verify purchases); payment and refund status and times; ticket issuance, use and balance records; time of first PREMIUM feature use under a subscription</td><td>Purchase verification, subscriptions and tickets, refunds and fraud prevention</td></tr>
         <tr><td>Customer support</td><td>Email address, inquiry and response content, attachments, complaints, disputes and handling records</td><td>Responding to inquiries, rights requests and disputes</td></tr>
         <tr><td>Account deletion</td><td>Reason for deletion, optional improvement feedback and consent to follow-up contact, deletion records</td><td>Account deletion and, where consented, service improvement and follow-up contact</td></tr>
         <tr><td>Security and operations</td><td>Access time, IP address, network and device information, requests, responses, errors and security events</td><td>Service security, incident analysis and fraud prevention</td></tr>
     </tbody>
 </table>
 <p>Google authentication tokens are processed only as needed for sign-in and session maintenance. The Controller does not collect Google passwords or full payment-method details.</p>
+
+<p>Free-ticket issuance processing records are deleted when the device registration is deleted.</p>
+<p>Partial refund operations use email addresses, order and product information, used and remaining ticket quantities, and refund ratios, with processing through email service providers acting on the Controller’s behalf. The retention rules in Section 3 apply to these records.</p>
 
 <h3>Feature Data Stored on the Device</h3>
 <p>The following information is processed on the user’s device for core functionality and is not transmitted to the Controller’s server unless it is separately synchronized or attached to a support inquiry.</p>
@@ -76,7 +79,7 @@
         <tr><td>Google Play Integrity</td><td>App, device and account integrity verdicts and request information</td><td>Preventing tampering, automation and fraudulent payments</td></tr>
     </tbody>
 </table>
-<p>The Controller does not intentionally add account, device or purchase identifiers, authentication tokens, installed-app lists, schedules, notes or accessibility data to custom Firebase events. In regions where consent is required for advertising or optional analytics, information is processed only within the scope consented to, and regions that are not ready may be excluded from distribution. In the EEA and UK, and when the region cannot be determined, remote collection by Analytics, Performance and Crashlytics is not enabled.</p>
+<p>The Controller does not intentionally add account, device or purchase identifiers, authentication tokens, installed-app lists, schedules, notes or accessibility data to custom Firebase events. In regions where consent is required for advertising or optional analytics, information is processed only within the scope consented to, and regions that are not ready may be excluded from distribution. Remote collection by Analytics, Performance and Crashlytics is not enabled in the EEA or UK or when the region cannot be determined.</p>
 
 <h2>2. Legal Bases for Processing</h2>
 <p>The Controller processes personal information under the applicable legal basis below.</p>
@@ -131,7 +134,7 @@
     <thead><tr><th>Processor</th><th>Entrusted Tasks</th></tr></thead>
     <tbody>
         <tr><td>Supabase, Inc.</td><td>Member authentication, database, server functions, logs, backups and security operations</td></tr>
-        <tr><td>Google LLC and affiliates</td><td>Google Sign-In and Firebase stability, analytics and performance services</td></tr>
+        <tr><td>Google LLC and affiliates</td><td>Google Sign-In, Firebase stability, analytics and performance services, and operational email delivery for refund processing</td></tr>
         <tr><td>주식회사 에이엑스지 (Daum Smartwork)</td><td>Sending and receiving email through <code>contact@maibrains.studio</code>, and managing mailboxes and attachments</td></tr>
     </tbody>
 </table>
@@ -153,7 +156,7 @@
     <thead><tr><th>Recipient and Related Information</th><th>Country, Timing and Method</th><th>Information and Purpose</th><th>Retention</th></tr></thead>
     <tbody>
         <tr><td>Supabase, Inc. and disclosed subprocessors (<a href="https://supabase.com/privacy">privacy information</a>)</td><td>Information is transmitted over the network when the Service is used. Countries of storage and processing for support, security and backups depend on the Supabase Service settings and disclosed subprocessor information.</td><td>Hosting, authentication, security and support for Member, device, purchase, Ticket and operational data</td><td>During account use and the periods in Section 3, followed by the contractual backup cycle</td></tr>
-        <tr><td>Google LLC, its affiliates and subprocessors (<a href="https://policies.google.com/privacy?hl=en">privacy information</a>)</td><td>Transferred over the network to the United States and countries where Google data centers are located when a feature is used</td><td>Processing sign-in, payment, integrity, analytics, crash, performance, installation, session, advertising and consent data</td><td>The service-specific periods in Section 3 and periods under Google’s policies and settings</td></tr>
+        <tr><td>Google LLC, its affiliates and subprocessors (<a href="https://policies.google.com/privacy?hl=en">privacy information</a>)</td><td>Transferred over the network to the United States and countries where Google data centers are located when a feature is used</td><td>Processing sign-in, payment and refund operational email, integrity, analytics, crash, performance, installation, session, advertising and consent data</td><td>The service-specific periods in Section 3 and periods under Google’s policies and settings</td></tr>
     </tbody>
 </table>
 <p>International transfers are made as necessary to perform Service contracts, with separate user consent, or under another basis permitted by applicable law, together with necessary safeguards. Optional international transfers may be refused by withdrawing consent in the relevant settings. Refusal of a transfer essential to the core Service may prevent features such as account sign-in or payment verification; where available, the user may request account deletion.</p>
