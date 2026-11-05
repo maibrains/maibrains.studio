@@ -76,9 +76,11 @@
         <tr><td>Firebase Performance</td><td>설치 식별자, IP 주소, 네트워크 요청과 성능 지표, 기기·앱 정보</td><td>속도·네트워크 성능 개선</td></tr>
         <tr><td>Firebase Installations·Sessions</td><td>앱 설치·세션 식별자와 기술 정보</td><td>Firebase 기능 제공, 세션·설치 관리</td></tr>
         <tr><td>Google AdMob</td><td>광고 식별자 또는 앱 세트 식별자 등 허용된 기기 식별정보, IP 주소, 광고 요청·노출·시청·보상 정보, 동의 선택, 기기·앱 정보</td><td>광고 동의 관리, 보상형 광고 제공, 광고 측정과 부정 이용 방지</td></tr>
+        <tr><td>Meta 앱 이벤트(Facebook SDK)</td><td>광고 식별자, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행 이벤트와 전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소</td><td>Meta 광고의 성과 측정과 최적화</td></tr>
     </tbody>
 </table>
 <p>운영자는 Firebase 맞춤 이벤트에 계정·기기·구매 식별자, 인증 토큰, 설치 앱 목록, 일정·메모 또는 접근성 데이터를 의도적으로 추가하지 않는다. EEA·영국은 배포 대상에서 제외한다. 광고에 동의가 필요한 지역에서는 동의를 받은 범위에서 처리한다. EEA·영국과 지역을 확인할 수 없는 경우에는 Analytics, Performance와 Crashlytics의 원격 수집을 활성화하지 않는다.</p>
+<p>Meta 앱 이벤트는 EEA·영국이 아니고 지역을 확인할 수 있으며, 이용자가 앱 시작 시 서비스 약관과 개인정보 처리방침에 동의한 뒤에만 시작한다. 위 전환 이벤트 외의 서비스 이용 이벤트, 결제 금액, 계정·구매 식별자는 Meta로 보내지 않는다.</p>
 
 <h2>2. 처리 근거</h2>
 <p>운영자는 다음 근거 중 적용되는 근거에 따라 개인정보를 처리한다.</p>
@@ -118,6 +120,7 @@
     <li>Firebase Crashlytics 충돌 데이터: 90일 보관 후 운영 시스템과 백업에서 삭제 절차를 시작한다.</li>
     <li>Firebase Performance: IP 주소와 연결된 성능 이벤트는 30일, 설치 식별자와 연결된 정보와 비식별 성능 데이터는 60일 보관 후 삭제 절차를 시작한다.</li>
     <li>Google Play, AdMob, Supabase 등 외부 서비스의 기록과 백업: 각 서비스 설정, 계약 및 법적 의무에 따른 기간.</li>
+    <li>Meta 앱 이벤트: Meta는 이벤트 데이터를 최대 2년까지 보유할 수 있다(Meta 사업 도구 약관).</li>
 </ul>
 
 <p>기술 데이터의 보관·삭제 설명: <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://firebase.google.com/docs/projects/manage-installations">Firebase Installations</a>.</p>
@@ -154,9 +157,11 @@
     <tbody>
         <tr><td>Google LLC - Google Play</td><td>Google 계정, 주문·구매·구독·환불 정보</td><td>결제, 구독, 환불 및 부정 이용 방지. Google 정책과 법적 보관기간에 따름</td></tr>
         <tr><td>Google LLC 및 관계사 - AdMob 광고 개인정보 처리</td><td>광고·앱·기기 식별정보, IP 주소, 광고 요청·노출·상호작용·보상, 동의 선택</td><td>광고 제공·측정, 동의 관리, 부정 이용 방지. Google 정책과 광고 설정에 따름</td></tr>
+        <tr><td>Meta Platforms, Inc. - Meta 앱 이벤트(Facebook SDK)</td><td>광고·앱·기기 식별정보, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행·전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소</td><td>광고 성과 측정, 광고 게재·맞춤화, Meta의 광고 게재 개선·안전성·제품 개선(Meta 사업 도구 약관). 이벤트 데이터는 최대 2년까지 보유할 수 있음</td></tr>
     </tbody>
 </table>
 <p>자세한 내용과 Google 연락 방법은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있다.</p>
+<p>Meta는 Facebook SDK로 받은 정보를 측정 서비스 제공과 광고 타게팅·게재에 이용할 수 있다. 광고 식별자는 Android 설정의 광고 항목에서 삭제하거나 재설정할 수 있으며, Meta의 광고 선호도는 <a href="https://www.facebook.com/adpreferences/">Meta 광고 설정</a>에서 관리할 수 있다. 거부 방법과 효과는 제13절에 적었다. 자세한 내용은 <a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a>과 <a href="https://www.facebook.com/legal/technology_terms">Meta 사업 도구 약관</a>에서 확인할 수 있다.</p>
 
 <h2>8. 개인정보의 국외 이전</h2>
 <p>서비스는 전 세계에서 제공되는 외부 서비스를 사용하므로 개인정보가 다음과 같이 국외에서 처리될 수 있다.</p>
@@ -167,6 +172,7 @@
         <tr><td>Supabase Pte. Ltd. 및 관계사·하위처리자</td><td><a href="mailto:privacy@supabase.io">privacy@supabase.io</a> · <a href="https://supabase.com/legal/dpa">처리위탁 계약</a> · <a href="https://supabase.com/legal/customer-resources/subprocessor-list">하위처리자 목록</a></td></tr>
         <tr><td>Google LLC(미국) 및 관계사·하위처리자</td><td><a href="mailto:googlekrsupport@google.com">googlekrsupport@google.com</a> · <a href="https://policies.google.com/privacy/additional?hl=ko">한국 이용자 연락 안내</a> · <a href="https://firebase.google.com/support/privacy/dpo">Firebase 개인정보 문의</a></td></tr>
         <tr><td>Google Asia Pacific Pte. Ltd.(싱가포르): 한국에 적용되는 Firebase Crashlytics 계약 법인</td><td>위 Google 연락처 · <a href="https://firebase.google.com/terms/crashlytics">Crashlytics 약관</a></td></tr>
+        <tr><td>Meta Platforms, Inc.(미국, 1 Meta Way, Menlo Park, CA 94025): Meta 앱 이벤트(Facebook SDK)</td><td><a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a> · <a href="https://www.facebook.com/legal/technology_terms">Meta 사업 도구 약관</a></td></tr>
     </tbody>
 </table>
 
@@ -175,10 +181,12 @@
 <p><strong>Firebase 수탁서비스:</strong> 미국, 캐나다, 멕시코, 브라질, 칠레, 우루과이, 아르헨티나, 영국, 아일랜드, 벨기에, 네덜란드, 룩셈부르크, 프랑스, 독일, 오스트리아, 스위스, 이탈리아, 스페인, 포르투갈, 덴마크, 핀란드, 스웨덴, 폴란드, 체코, 슬로바키아, 일본, 대만, 홍콩, 인도, 인도네시아, 태국, 싱가포르, 말레이시아, 필리핀, 호주, 뉴질랜드, 이스라엘, 카타르, 사우디아라비아, 남아프리카공화국. 기술지원의 제3자 하위처리자는 운영자가 지원 과정에서 공유한 데이터에 접근할 수 있다. 이 국가 범위는 Firebase 수탁서비스에 해당한다.</p>
 <p>처리 국가 안내: <a href="https://firebase.google.com/support/privacy">공식 처리 위치 안내</a>, <a href="https://firebase.google.com/terms/subprocessors">하위처리자 안내</a>, <a href="https://cloud.google.com/terms/subprocessors">Google Group 하위처리자의 처리 국가</a>, <a href="https://cloud.google.com/compute/docs/regions-zones">Cloud 리전</a>, <a href="https://www.google.com/about/datacenters/locations/">Google 데이터센터</a></p>
 <p>Google Sign-In, Google Play Billing·Developer API, AdMob·UMP 및 일반 Gmail의 글로벌 처리는 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/privacy/additional?hl=ko">한국 추가 안내</a>의 서버·데이터센터 설명을 따른다. <a href="https://www.google.com/about/datacenters/locations/">현재 공식 운영 데이터센터</a> 소재국은 미국, 칠레, 우루과이, 대만, 일본, 싱가포르, 벨기에, 덴마크, 핀란드, 독일, 아일랜드, 네덜란드, 영국이며 해당 시설에서 개인정보가 처리될 수 있다.</p>
+<p><strong>Meta 앱 이벤트:</strong> 이전받는 자의 소재국은 미국이다. Meta 사업 도구 약관은 데이터의 저장·처리 국가를 명시하지 않으므로 이 방침은 처리 국가를 특정하지 않으며, 처리 위치는 <a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a>을 따른다.</p>
 <h3>이전 근거</h3>
 <p>Supabase의 회원 인증·서비스 데이터 저장·조회·결제 검증·환불, Firebase Crashlytics·Performance와 필요한 Installations·Sessions의 장애·성능 진단, Gmail의 환불 업무 보고는 계약 이행에 필요한 국외 처리위탁·보관으로 개인정보 보호법 제28조의8 제1항 제3호를 근거로 한다.</p>
 <p>Firebase Analytics에도 계약상 기능과 권리의 정상 제공을 확인하는 데 필요한 권한·인증·결제·이용권·광고 보상·일시정지 기능의 작동 분석 범위에서 같은 근거를 적용한다. 일반 기능 이용·탈퇴 추세 분석 전체에 적용하는 것은 아니다.</p>
 <p>AdMob·UMP 광고 정보는 Google SDK가 직접 수집한다. 운영자는 광고 요청에 회원 계정 식별자나 사용자 정의 정보를 별도로 추가하지 않는다.</p>
+<p>Meta 앱 이벤트는 별도의 국외 이전 동의 절차를 두지 않고, 제7절과 제13절의 고지 및 이용자의 거부 방법(기기 광고 설정, Meta 광고 설정)을 통해 운영한다.</p>
 <h3>서비스별 이전 항목과 보관 기준</h3>
 
 <table>
@@ -193,6 +201,7 @@
         <tr><td>Firebase Performance — Google LLC</td><td>성능 이벤트 발생 후 네트워크로 전송</td><td>성능 정보, 설치 식별정보와 IP 주소: 성능 개선</td><td>IP 연결 정보 30일·설치 연결 정보와 비식별 데이터 60일 후 운영·백업 시스템에서 삭제 절차 시작</td></tr>
         <tr><td>Firebase Installations·Sessions</td><td>설치 등록·세션 발생 시 네트워크로 전송</td><td>설치 식별자와 세션 정보: Firebase 진단 및 분석 서비스의 설치·세션 연결</td><td>연결 서비스의 기간에 따른다. 설치 식별자 삭제 요청에 따른 관련 데이터 삭제는 운영 시스템과 백업에서 최대 180일이 걸릴 수 있으며 Analytics 데이터 삭제와는 별개이다.</td></tr>
         <tr><td>AdMob·UMP — Google SDK 직접 수집</td><td>동의 정보 갱신·광고 요청·노출·상호작용 시 Google SDK가 네트워크로 전송</td><td>광고·앱·기기 식별정보, IP 주소, 광고 상호작용과 동의 선택: 광고 제공·측정·동의 관리·부정 이용 방지</td><td>Google 광고 정책·설정과 법적 의무에 따른다.</td></tr>
+        <tr><td>Meta 앱 이벤트 — Meta Platforms, Inc.</td><td>앱 설치·실행과 전환 이벤트 발생 시 Meta SDK가 암호화된 네트워크로 전송</td><td>광고·앱·기기 식별정보, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행·전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소: 광고 성과 측정, 광고 게재·맞춤화</td><td>Meta는 이벤트 데이터를 최대 2년까지 보유할 수 있다(Meta 사업 도구 약관). 그 밖의 처리는 Meta 정책에 따른다.</td></tr>
         <tr><td>Gmail 환불 업무 이메일</td><td>환불 운영 보고서 발송 시 암호화된 네트워크로 전송</td><td>회원 이메일, 주문·상품·환불과 티켓 정보: 환불 처리와 운영 확인</td><td>운영 이메일과 첨부파일은 제4절의 증빙 보관·삭제 기준. 서비스 자체 사본은 계약·설정에 따른다.</td></tr>
     </tbody>
 </table>
@@ -218,7 +227,7 @@
 <p>대한민국 이용자는 개인정보침해 신고센터(<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>, 국번 없이 118), 개인정보분쟁조정위원회(<a href="https://www.kopico.go.kr">kopico.go.kr</a>, 1833-6972) 또는 개인정보보호위원회에 상담·분쟁조정을 요청할 수 있다.</p>
 
 <h2>11. 미성년자의 개인정보</h2>
-<p>서비스는 만 18세 미만을 대상으로 하지 않으며, 거주 국가별 이용 자격은 <a href="terms-of-service-ko.html">서비스 이용약관 제4조</a>를 따른다. 법정대리인 동의 등 적용 법령상 요건을 갖추지 않은 미성년자의 개인정보가 수집된 사실을 알게 되면 법적 보관 의무가 없는 정보를 삭제한다.</p>
+<p>서비스는 만 18세 미만을 대상으로 하지 않으며 앱 시작 시 만 18세 이상인지 확인한다. 거주 국가별 이용 자격은 <a href="terms-of-service-ko.html">서비스 이용약관 제4조</a>를 따른다. 법정대리인 동의 등 적용 법령상 요건을 갖추지 않은 미성년자의 개인정보가 수집된 사실을 알게 되면 법적 보관 의무가 없는 정보를 삭제한다.</p>
 
 <h2>12. 안전성 확보조치</h2>
 <p>운영자는 접근 권한 최소화, 인증과 접근 통제, 전송 구간 암호화, 로그 점검, 취약점·업데이트 관리, 수탁자 관리 등 개인정보의 분실·도난·유출·변조를 방지하기 위한 합리적인 기술적·관리적 조치를 시행한다.</p>
@@ -227,6 +236,12 @@
 <p>앱과 외부 SDK는 앱 설치·세션 식별자, 광고 식별자 등 모바일 기기 식별정보와 기기 로컬 저장소를 사용할 수 있다. 개인정보 보호 지역 판정 정보는 원격 진단 수집 차단과 광고 개인정보 설정 제공에 사용되며, 앱 데이터 삭제 또는 앱 제거 시 삭제된다.</p>
 <p>Google의 광고 동의 관리 도구(UMP)는 지역과 제공되는 메시지에 따라 선택 화면을 표시한다.</p>
 <p>마케팅 동의는 제9절의 앱 설정에서 변경할 수 있다. Google이 개인정보 옵션을 제공하는 경우 앱의 광고 개인정보 설정에서 광고 동의 선택을 변경할 수 있으며, 기기의 광고 개인정보 설정과 Google 설정에서도 각 설정이 제공하는 광고 관련 선택을 관리할 수 있다. 앱에는 Firebase Analytics·Performance·Crashlytics의 수집을 별도로 선택하거나 중단하는 설정이 없으며, 광고 설정을 변경해도 이 수집은 중단되지 않는다. Android 권한은 기기 설정에서 철회할 수 있으며, 관련 기능이 작동하지 않을 수 있다. 개인정보 처리정지·삭제 요청은 제10절의 방법을 따른다.</p>
+<p>Meta 앱 이벤트(Facebook SDK)는 광고 식별자와 설치·앱 실행·전환 이벤트를 수집해 Meta에 전송한다(제7절·제8절). 이용자는 다음 방법으로 광고 목적의 수집·이용을 거부하거나 제한할 수 있다.</p>
+<ul>
+    <li>Android 기기 설정: 설정의 광고 항목(예: 설정 &gt; 개인정보 보호 &gt; 광고, 또는 Google &gt; 설정 &gt; 개인 정보 보호 및 안전 &gt; 광고 개인 최적화)에서 광고 ID를 삭제하거나 개인 맞춤 광고를 사용 중지한다. 경로는 기기 제조사와 Android 버전에 따라 다를 수 있다.</li>
+    <li>Meta 광고 설정: <a href="https://www.facebook.com/adpreferences/">Meta 광고 설정</a>에서 광고 선호도를 관리한다.</li>
+</ul>
+<p>앱에는 Meta 앱 이벤트 전송만 별도로 선택하거나 중단하는 설정이 없다. 기기에서 광고 ID를 삭제하거나 맞춤 광고를 중단하면 광고 식별자를 통한 개인 맞춤 연결은 제한되지만, 설치·앱 실행 등의 이벤트와 Meta 앱 익명 식별자, IP 주소는 계속 전송될 수 있다. 이 설정을 변경해도 앱의 기능 이용에는 제한이 없다.</p>
 
 <h2>14. 방침의 변경</h2>
 <p>이 방침을 변경하면 적용일과 주요 변경 내용을 서비스 또는 연결 화면에서 원칙적으로 7일 전에 알린다. 이용자 권리에 중대한 변경은 원칙적으로 30일 전에 알리고, 별도 동의가 필요한 경우에는 동의를 받는다.</p>
