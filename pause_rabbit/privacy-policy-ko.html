@@ -76,7 +76,7 @@
         <tr><td>Firebase Performance</td><td>설치 식별자, IP 주소, 네트워크 요청과 성능 지표, 기기·앱 정보</td><td>속도·네트워크 성능 개선</td></tr>
         <tr><td>Firebase Installations·Sessions</td><td>앱 설치·세션 식별자와 기술 정보</td><td>Firebase 기능 제공, 세션·설치 관리</td></tr>
         <tr><td>Google AdMob</td><td>광고 식별자 또는 앱 세트 식별자 등 허용된 기기 식별정보, IP 주소, 광고 요청·노출·시청·보상 정보, 동의 선택, 기기·앱 정보</td><td>광고 동의 관리, 보상형 광고 제공, 광고 측정과 부정 이용 방지</td></tr>
-        <tr><td>Meta 앱 이벤트(Facebook SDK)</td><td>광고 식별자, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행 이벤트와 전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소</td><td>Meta 광고의 성과 측정과 최적화</td></tr>
+        <tr><td>Meta 앱 이벤트(Facebook SDK)</td><td>광고 식별자, Facebook 앱이 설치된 경우 Facebook 앱의 광고 기여 식별자, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행 이벤트와 전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소</td><td>Meta 광고의 성과 측정과 최적화</td></tr>
     </tbody>
 </table>
 <p>운영자는 Firebase 맞춤 이벤트에 계정·기기·구매 식별자, 인증 토큰, 설치 앱 목록, 일정·메모 또는 접근성 데이터를 의도적으로 추가하지 않는다. EEA·영국은 배포 대상에서 제외한다. 광고에 동의가 필요한 지역에서는 동의를 받은 범위에서 처리한다. EEA·영국과 지역을 확인할 수 없는 경우에는 Analytics, Performance와 Crashlytics의 원격 수집을 활성화하지 않는다.</p>
@@ -157,11 +157,11 @@
     <tbody>
         <tr><td>Google LLC - Google Play</td><td>Google 계정, 주문·구매·구독·환불 정보</td><td>결제, 구독, 환불 및 부정 이용 방지. Google 정책과 법적 보관기간에 따름</td></tr>
         <tr><td>Google LLC 및 관계사 - AdMob 광고 개인정보 처리</td><td>광고·앱·기기 식별정보, IP 주소, 광고 요청·노출·상호작용·보상, 동의 선택</td><td>광고 제공·측정, 동의 관리, 부정 이용 방지. Google 정책과 광고 설정에 따름</td></tr>
-        <tr><td>Meta Platforms, Inc. - Meta 앱 이벤트(Facebook SDK)</td><td>광고·앱·기기 식별정보, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행·전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소</td><td>광고 성과 측정, 광고 게재·맞춤화, Meta의 광고 게재 개선·안전성·제품 개선(Meta 사업 도구 약관). 이벤트 데이터는 최대 2년까지 보유할 수 있음</td></tr>
+        <tr><td>Meta Platforms, Inc. - Meta 앱 이벤트(Facebook SDK)</td><td>광고·앱·기기 식별정보, Facebook 앱이 설치된 경우 Facebook 앱의 광고 기여 식별자, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행·전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소</td><td>광고 성과 측정, 광고 게재·맞춤화, Meta의 광고 게재 개선·안전성·제품 개선(Meta 사업 도구 약관). 이벤트 데이터는 최대 2년까지 보유할 수 있음</td></tr>
     </tbody>
 </table>
 <p>자세한 내용과 Google 연락 방법은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있다.</p>
-<p>Meta는 Facebook SDK로 받은 정보를 측정 서비스 제공과 광고 타게팅·게재에 이용할 수 있다. 광고 식별자는 Android 설정의 광고 항목에서 삭제하거나 재설정할 수 있으며, Meta의 광고 선호도는 <a href="https://www.facebook.com/adpreferences/">Meta 광고 설정</a>에서 관리할 수 있다. 거부 방법과 효과는 제13절에 적었다. 자세한 내용은 <a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a>과 <a href="https://www.facebook.com/legal/technology_terms">Meta 사업 도구 약관</a>에서 확인할 수 있다.</p>
+<p>기기에 Facebook 앱이 설치되어 있으면 Meta SDK가 Facebook 앱에서 광고 기여 식별자를 읽어 Meta 광고를 통한 설치·전환의 기여 측정에 사용할 수 있다. Meta는 Facebook SDK로 받은 정보를 측정 서비스 제공과 광고 타게팅·게재에 이용할 수 있다. 광고 식별자는 Android 설정의 광고 항목에서 삭제하거나 재설정할 수 있으며, Meta의 광고 선호도는 <a href="https://www.facebook.com/adpreferences/">Meta 광고 설정</a>에서 관리할 수 있다. 거부 방법과 효과는 제13절에 적었다. 자세한 내용은 <a href="https://www.facebook.com/privacy/policy/">Meta 개인정보처리방침</a>과 <a href="https://www.facebook.com/legal/technology_terms">Meta 사업 도구 약관</a>에서 확인할 수 있다.</p>
 
 <h2>8. 개인정보의 국외 이전</h2>
 <p>서비스는 전 세계에서 제공되는 외부 서비스를 사용하므로 개인정보가 다음과 같이 국외에서 처리될 수 있다.</p>
@@ -201,7 +201,7 @@
         <tr><td>Firebase Performance — Google LLC</td><td>성능 이벤트 발생 후 네트워크로 전송</td><td>성능 정보, 설치 식별정보와 IP 주소: 성능 개선</td><td>IP 연결 정보 30일·설치 연결 정보와 비식별 데이터 60일 후 운영·백업 시스템에서 삭제 절차 시작</td></tr>
         <tr><td>Firebase Installations·Sessions</td><td>설치 등록·세션 발생 시 네트워크로 전송</td><td>설치 식별자와 세션 정보: Firebase 진단 및 분석 서비스의 설치·세션 연결</td><td>연결 서비스의 기간에 따른다. 설치 식별자 삭제 요청에 따른 관련 데이터 삭제는 운영 시스템과 백업에서 최대 180일이 걸릴 수 있으며 Analytics 데이터 삭제와는 별개이다.</td></tr>
         <tr><td>AdMob·UMP — Google SDK 직접 수집</td><td>동의 정보 갱신·광고 요청·노출·상호작용 시 Google SDK가 네트워크로 전송</td><td>광고·앱·기기 식별정보, IP 주소, 광고 상호작용과 동의 선택: 광고 제공·측정·동의 관리·부정 이용 방지</td><td>Google 광고 정책·설정과 법적 의무에 따른다.</td></tr>
-        <tr><td>Meta 앱 이벤트 — Meta Platforms, Inc.</td><td>앱 설치·실행과 전환 이벤트 발생 시 Meta SDK가 암호화된 네트워크로 전송</td><td>광고·앱·기기 식별정보, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행·전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소: 광고 성과 측정, 광고 게재·맞춤화</td><td>Meta는 이벤트 데이터를 최대 2년까지 보유할 수 있다(Meta 사업 도구 약관). 그 밖의 처리는 Meta 정책에 따른다.</td></tr>
+        <tr><td>Meta 앱 이벤트 — Meta Platforms, Inc.</td><td>앱 설치·실행과 전환 이벤트 발생 시 Meta SDK가 암호화된 네트워크로 전송</td><td>광고·앱·기기 식별정보, Facebook 앱이 설치된 경우 Facebook 앱의 광고 기여 식별자, Meta 앱 설치·익명 식별자, 앱 설치·앱 실행·전환 이벤트(가입, 온보딩 완료, 챌린지 완료, 첫 포즈 시작, 구독권 결제 확정), 기기 모델·운영체제·언어·통신사·시간대·화면 정보, IP 주소: 광고 성과 측정, 광고 게재·맞춤화</td><td>Meta는 이벤트 데이터를 최대 2년까지 보유할 수 있다(Meta 사업 도구 약관). 그 밖의 처리는 Meta 정책에 따른다.</td></tr>
         <tr><td>Gmail 환불 업무 이메일</td><td>환불 운영 보고서 발송 시 암호화된 네트워크로 전송</td><td>회원 이메일, 주문·상품·환불과 티켓 정보: 환불 처리와 운영 확인</td><td>운영 이메일과 첨부파일은 제4절의 증빙 보관·삭제 기준. 서비스 자체 사본은 계약·설정에 따른다.</td></tr>
     </tbody>
 </table>
@@ -241,7 +241,7 @@
     <li>Android 기기 설정: 설정의 광고 항목(예: 설정 &gt; 개인정보 보호 &gt; 광고, 또는 Google &gt; 설정 &gt; 개인 정보 보호 및 안전 &gt; 광고 개인 최적화)에서 광고 ID를 삭제하거나 개인 맞춤 광고를 사용 중지한다. 경로는 기기 제조사와 Android 버전에 따라 다를 수 있다.</li>
     <li>Meta 광고 설정: <a href="https://www.facebook.com/adpreferences/">Meta 광고 설정</a>에서 광고 선호도를 관리한다.</li>
 </ul>
-<p>앱에는 Meta 앱 이벤트 전송만 별도로 선택하거나 중단하는 설정이 없다. 기기에서 광고 ID를 삭제하거나 맞춤 광고를 중단하면 광고 식별자를 통한 개인 맞춤 연결은 제한되지만, 설치·앱 실행 등의 이벤트와 Meta 앱 익명 식별자, IP 주소는 계속 전송될 수 있다. 이 설정을 변경해도 앱의 기능 이용에는 제한이 없다.</p>
+<p>앱에는 Meta 앱 이벤트 전송만 별도로 선택하거나 중단하는 설정이 없다. 기기에서 광고 ID를 삭제하거나 맞춤 광고를 중단하면 광고 식별자를 통한 개인 맞춤 연결은 제한되지만, 설치·앱 실행 등의 이벤트와 Meta 앱 익명 식별자, IP 주소는 계속 전송될 수 있다. 기기에 Facebook 앱이 설치되어 있으면 Facebook 앱의 광고 기여 식별자는 광고 ID와 별도로 읽힐 수 있다. 이 설정을 변경해도 앱의 기능 이용에는 제한이 없다.</p>
 
 <h2>14. 방침의 변경</h2>
 <p>이 방침을 변경하면 적용일과 주요 변경 내용을 서비스 또는 연결 화면에서 원칙적으로 7일 전에 알린다. 이용자 권리에 중대한 변경은 원칙적으로 30일 전에 알리고, 별도 동의가 필요한 경우에는 동의를 받는다.</p>
