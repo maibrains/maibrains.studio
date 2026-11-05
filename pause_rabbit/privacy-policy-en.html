@@ -39,7 +39,7 @@
 <table>
     <thead><tr><th>Category</th><th>Information Processed</th><th>Purpose</th></tr></thead>
     <tbody>
-        <tr><td>Google sign-in</td><td>Google account identifier, email address, authentication provider information, authentication token</td><td>Identity verification, account creation and sign-in</td></tr>
+        <tr><td>Google sign-in</td><td>Google account identifier, email address, name and profile photo provided by the authentication provider, authentication provider information, authentication token</td><td>Identity verification, account creation and sign-in</td></tr>
         <tr><td>Account</td><td>Internal member identifier, membership tier, registration, modification and withdrawal times</td><td>Account management, access rights and withdrawal processing</td></tr>
         <tr><td>Device</td><td>Device identifier, model name, user-defined device nickname, app and operating-system versions, free-ticket issuance processing records (the two most recent weeks)</td><td>Device connection, synchronization, troubleshooting and prevention of duplicate free-ticket issuance</td></tr>
         <tr><td>Paid services</td><td>Product, purchase and subscription identifiers; order identifiers; purchase tokens (information used to verify purchases); payment and refund status and times; ticket issuance, use and balance records; time of first PREMIUM feature use under a subscription</td><td>Purchase verification, subscriptions and tickets, refunds and fraud prevention</td></tr>
@@ -65,7 +65,7 @@
         <tr><td>Privacy-region information</td><td>Determining the applicable region, blocking remote diagnostics collection, and providing advertising privacy settings</td></tr>
     </tbody>
 </table>
-<p>The service does not use the accessibility service to collect screen content, keystrokes, message content or passwords. Local data may be deleted when app data is cleared or the app is removed, and the operating system may process it separately under the device backup policy.</p>
+<p>The Controller does not use the Accessibility Service to read or collect screen content, keystrokes, message content or passwords. Local data may be deleted when app data is cleared or the app is removed, and the operating system may process it separately under the device backup policy.</p>
 
 <h3>Analytics, Advertising and Stability Information</h3>
 <table>
@@ -76,22 +76,22 @@
         <tr><td>Firebase Performance</td><td>Installation identifier, IP address, network requests and performance metrics, device and app information</td><td>Speed and network-performance improvements</td></tr>
         <tr><td>Firebase Installations and Sessions</td><td>App installation and session identifiers and technical information</td><td>Providing Firebase features and managing sessions and installations</td></tr>
         <tr><td>Google AdMob</td><td>Permitted device identifiers such as advertising identifiers or app-set identifiers, IP address, ad requests, impressions, views and rewards, consent choices, device and app information</td><td>Advertising consent management, rewarded ads, ad measurement and fraud prevention</td></tr>
-        <tr><td>Google Play Integrity</td><td>App, device and account integrity verdicts and request information</td><td>Preventing tampering, automation and fraudulent payments</td></tr>
     </tbody>
 </table>
-<p>The Controller does not intentionally add account, device or purchase identifiers, authentication tokens, installed-app lists, schedules, notes or accessibility data to custom Firebase events. In regions where consent is required for advertising or optional analytics, information is processed only within the scope consented to, and regions that are not ready may be excluded from distribution. Remote collection by Analytics, Performance and Crashlytics is not enabled in the EEA or UK or when the region cannot be determined.</p>
+<p>The Controller does not intentionally add account, device or purchase identifiers, authentication tokens, installed-app lists, schedules, notes or accessibility data to custom Firebase events. The EEA and the United Kingdom are excluded from distribution. In regions where consent is required for advertising, information is processed only within the scope consented to. Remote collection by Analytics, Performance and Crashlytics is not enabled in the EEA or UK or when the region cannot be determined.</p>
 
 <h2>2. Legal Bases for Processing</h2>
 <p>The Controller processes personal information under the applicable legal basis below.</p>
 <ul>
     <li>Account authentication, core features, purchases, refunds and customer support: entering into and performing a contract with the user</li>
     <li>Tax and e-commerce records and responses to legal requests: compliance with legal obligations</li>
-    <li>Marketing emails, optional analytics and personalized ads, and optional post-withdrawal contact: user consent</li>
-    <li>Security, incident analysis and non-personalized service improvement: the Controller’s legitimate interests after giving priority to users’ rights</li>
-    <li>Protection of life or physical safety in an emergency, or another basis permitted by law</li>
+    <li>Marketing emails, personalized ads, and optional post-withdrawal contact: user consent</li>
+    <li>Security, incident analysis and non-personalized service improvement: the Controller’s legitimate interests where the processing is necessary, those interests clearly outweigh users’ rights, and the processing is substantially related to those interests and remains within reasonable bounds</li>
 </ul>
-<p>Consent-based processing may be withdrawn, without affecting the lawfulness of processing before withdrawal. Where Firebase Analytics or advertising-identifier processing requires consent, it does not begin before optional consent is given. Where stability processing such as Crashlytics or Performance is based on legitimate interests, only the minimum technical information is processed, users may object, and consent is obtained if local law requires it.</p>
-<p>A Google account identifier and email address are required to register, purchase information is required for paid features, and device identifiers are required to connect devices. Without this information, the relevant features cannot be provided. Marketing, optional analytics and advertising, and account-deletion feedback are optional, and refusing them does not disadvantage use of the core service.</p>
+<p>Consent-based processing may be withdrawn, without affecting the lawfulness of processing before withdrawal. Where advertising-identifier processing requires consent, it does not begin before optional consent is given. Where stability processing such as Crashlytics or Performance is based on legitimate interests, only the minimum technical information is processed, users may object, and consent is obtained if local law requires it.</p>
+<p>A Google account identifier and email address are required to register, purchase information is required for paid features, and device identifiers are required to connect devices. Without this information, the relevant features cannot be provided. Marketing, optional advertising, and account-deletion feedback are optional, and refusing them does not disadvantage use of the core service.</p>
+
+<p>Firebase Analytics helps identify operational issues and improve features by analyzing how permissions, sign-in, payments, ad rewards and pause features work, and usage trends for onboarding, missions and notifications. Collection settings and requests to suspend processing or delete information are described in Sections 13 and 10.</p>
 
 <h2>3. Retention Periods</h2>
 <p>The Controller deletes personal information without delay when its purpose has been fulfilled or the account is deleted. The following information is retained separately where required by law or to protect users’ rights.</p>
@@ -100,42 +100,50 @@
     <tbody>
         <tr><td>Records concerning contracts or withdrawal of offers</td><td>5 years</td></tr>
         <tr><td>Records concerning payment and supply of services</td><td>5 years</td></tr>
-        <tr><td>Valid paid tickets not automatically refunded and the minimum identifiers needed to verify ownership</td><td>5 years from account deletion; deleted earlier if refunded, waived or lawfully extinguished</td></tr>
+        <tr><td>Minimum identifying and settlement information for pending ticket refunds</td><td>Until refund and settlement completion; statutory records follow their applicable retention periods</td></tr>
         <tr><td>Records concerning labels and advertising</td><td>6 months</td></tr>
         <tr><td>Records concerning consumer complaints or dispute resolution</td><td>3 years</td></tr>
-        <tr><td>Transaction, account-deletion, and security records</td><td>Up to 5 years from account deletion, then processed so they can no longer be linked to the account</td></tr>
-        <tr><td>Marketing-consent timestamp held when the account is deleted</td><td>6 months from account deletion</td></tr>
-        <tr><td>Optional account-deletion feedback and follow-up consent</td><td>Until the analysis or contact purpose is fulfilled or consent is withdrawn, up to 1 year</td></tr>
+        <tr><td>Account-deletion and security records</td><td>Up to 5 years from account deletion, then processed so they can no longer be linked to the account</td></tr>
+        <tr><td>Marketing-consent timestamp held when the account is deleted</td><td>2 years from account deletion</td></tr>
+        <tr><td>Optional account-deletion feedback and follow-up consent</td><td>Until the analysis or contact purpose is fulfilled or consent is withdrawn, up to 2 years</td></tr>
     </tbody>
 </table>
-<p>The account is removed from all future marketing-recipient lists immediately upon deletion. A marketing-consent timestamp remaining in the deleted-account area is used only as evidence and deleted after 6 months. The selected deletion reason, optional feedback and follow-up consent are deleted earlier when the purpose is fulfilled or consent is withdrawn, and in all cases are removed from identifiable records after 1 year.</p>
+<p>Statutory retention periods apply regardless of account deletion. Only the minimum information needed for ongoing subscriptions and pending refunds or settlement is retained separately. When the same information is needed for two or more purposes specified in this Policy, each purpose’s retention rules apply. It is deleted without delay when no legal retention obligation remains and each specified purpose has been fulfilled or its retention period has ended.</p>
+<p>Account-deletion and security records are kept only as needed to prevent benefit abuse through repeated registration, investigate account theft and investigate and respond to service incidents. The 5-year maximum is an operational limit, not a statutory retention period. Information is deleted earlier when its purpose is fulfilled unless legal retention is required. Access, error, crash and performance logs follow the service-specific periods below.</p>
+<p>Deleted accounts are immediately excluded from marketing emails. The marketing-consent timestamp held at deletion is retained only as evidence for 2 years, then deleted. Deletion reasons, feedback and follow-up consent are deleted when their purpose is fulfilled or consent is withdrawn, and removed from identifiable records no later than 2 years after account deletion.</p>
+
 <p>The default retention periods for service-specific technical data are as follows. If an actual legal retention obligation or security investigation requires longer retention, the minimum necessary information is separated for that purpose.</p>
 <ul>
-    <li>Firebase Analytics user and event data: 2 months by default, subject to the actual Service setting. Aggregated reports may not be subject to this setting.</li>
-    <li>Firebase Crashlytics crash data: generally 90 days.</li>
-    <li>Firebase Performance: performance events linked to IP addresses are generally retained for 30 days, and information linked to installation identifiers for 60 days.</li>
+    <li>Firebase Analytics event data: 2 months. User data: 14 months, with the user-data retention period reset when new activity occurs. Aggregated reports may not be subject to this setting.</li>
+    <li>Firebase Crashlytics crash data: retained for 90 days before removal from live and backup systems begins.</li>
+    <li>Firebase Performance: performance events linked to IP addresses are retained for 30 days; installation-linked information and deidentified performance data are retained for 60 days before removal begins.</li>
     <li>Records and backups held by external services such as Google Play, AdMob and Supabase: according to each service’s settings, contracts and legal obligations.</li>
 </ul>
 
+<p>Technical data retention and deletion references: <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://firebase.google.com/docs/projects/manage-installations">Firebase Installations</a>.</p>
+
 <h2>4. Deletion of Personal Information</h2>
 <ol>
-    <li>When a retention period ends or a processing purpose is fulfilled, information is deleted so that it cannot be recovered or reproduced.</li>
-    <li>Electronic files are securely deleted or made inaccessible.</li>
+    <li>Information is deleted when its retention period ends or its purpose is fulfilled. Electronic files are deleted by a method that prevents recovery or reproduction.</li>
     <li>Information retained by law is logically or physically separated from active service information and access is restricted.</li>
-    <li>Information remaining in backups is deleted according to the established backup-rotation cycle, and deletion status is reapplied after restoration.</li>
+    <li>Backups maintained by external services follow the contractual and configuration standards in Section 3. Completed account and data deletions after the backup date are reapplied when restoring a backup.</li>
 </ol>
 
-<h2>5. Paid Tickets After Account Deletion</h2>
-<p>Valid paid tickets that are not automatically refunded when an account is deleted are retained separately from statutory transaction records for 5 years, together with the minimum identifiers needed to verify ownership, to fulfill the user’s property rights. If the user registers again with the same Google Account within 5 years, the remaining balance may be restored after verifying identity and the validity of the right. The information is deleted earlier if the tickets are refunded, the user waives the right or the right is lawfully extinguished. After 5 years, it is deleted or made irrecoverable unless there is another ground for retention, such as a legal dispute.</p>
+<p>Necessary evidence of contracts, withdrawals, payments, refunds, complaints and disputes in emails and attachments is retained separately for the applicable periods in Section 3. Other unnecessary materials are deleted immediately after processing is complete. Personal-data deletion request records are deleted when their purpose is fulfilled unless legal retention is required.</p>
+<p>Names and photos included in authentication information are removed upon account deletion. The email address needed for refund contact and authentication identifiers needed to identify the refund recipient are retained under the retention standards.</p>
+
+<h2>5. Refund Information After Account Deletion</h2>
+<p>Retention and deletion of refund information after account deletion follow Sections 3 and 4. Refund conditions and methods follow <a href="terms-of-service-en.html">Articles 9 and 10 of the Terms of Service</a>. The deletion scope is described in the <a href="account-deletion-en.html">Account and Data Deletion Guide</a>.</p>
 
 <h2>6. Processors</h2>
 <p>The Controller entrusts the following tasks only as necessary to provide the service. Contracts are used to manage prohibitions on processing beyond the stated purpose, security measures, subprocessors and deletion at termination.</p>
 <table>
     <thead><tr><th>Processor</th><th>Entrusted Tasks</th></tr></thead>
     <tbody>
-        <tr><td>Supabase, Inc.</td><td>Member authentication, database, server functions, logs, backups and security operations</td></tr>
-        <tr><td>Google LLC and affiliates</td><td>Google Sign-In, Firebase stability, analytics and performance services, and operational email delivery for refund processing</td></tr>
-        <tr><td>주식회사 에이엑스지 (Daum Smartwork)</td><td>Sending and receiving email through <code>contact@maibrains.studio</code>, and managing mailboxes and attachments</td></tr>
+        <tr><td>Supabase Pte. Ltd. and affiliates</td><td>Member authentication, database, server functions, logs, backups and security operations</td></tr>
+        <tr><td>Google LLC and affiliates</td><td>Google Sign-In, Firebase analytics and performance services, and operational email delivery for refund processing</td></tr>
+        <tr><td>Google Asia Pacific Pte. Ltd.</td><td>Firebase Crashlytics crash and error analysis</td></tr>
+        <tr><td>주식회사 에이엑스지 (Daum Smartwork)</td><td>Sending and receiving email, and managing mailboxes and attachments</td></tr>
     </tbody>
 </table>
 
@@ -144,27 +152,58 @@
 <table>
     <thead><tr><th>Provider and Service</th><th>Information That May Be Processed</th><th>Purpose and Retention</th></tr></thead>
     <tbody>
-        <tr><td>Google LLC - Google Play and Play Integrity</td><td>Google Account, order, purchase, subscription and refund information, and device and account integrity verdicts and request information</td><td>Payments, subscriptions, refunds, integrity verification and fraud prevention; according to Google’s policies and legal retention periods</td></tr>
-        <tr><td>Google LLC - AdMob</td><td>Advertising, app and device identifiers, IP address, ad requests, impressions, interactions and rewards, consent choices</td><td>Ad delivery and measurement, consent management and fraud prevention; according to Google’s policies and advertising settings</td></tr>
+        <tr><td>Google LLC - Google Play</td><td>Google Account, order, purchase, subscription and refund information</td><td>Payments, subscriptions, refunds and fraud prevention; according to Google’s policies and legal retention periods</td></tr>
+        <tr><td>Google LLC and affiliates - AdMob advertising-data processing</td><td>Advertising, app and device identifiers, IP address, ad requests, impressions, interactions and rewards, consent choices</td><td>Ad delivery and measurement, consent management and fraud prevention; according to Google’s policies and advertising settings</td></tr>
     </tbody>
 </table>
 <p>For details and ways to contact Google, see the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>.</p>
 
 <h2>8. International Transfers</h2>
 <p>Because the Service uses external services provided globally, personal information may be processed outside the user’s country as described below.</p>
+<p>Supabase’s primary database is stored in Seoul, Republic of Korea, but server functions and support or security access may involve other countries. The lists below describe possible processing locations; each user’s data is not sent to every country. Entity locations, storage and execution locations, and support or subprocessor access locations may differ.</p>
 <table>
-    <thead><tr><th>Recipient and Related Information</th><th>Country, Timing and Method</th><th>Information and Purpose</th><th>Retention</th></tr></thead>
+    <thead><tr><th>Recipient</th><th>Contact and Related Information</th></tr></thead>
     <tbody>
-        <tr><td>Supabase, Inc. and disclosed subprocessors (<a href="https://supabase.com/privacy">privacy information</a>)</td><td>Information is transmitted over the network when the Service is used. Countries of storage and processing for support, security and backups depend on the Supabase Service settings and disclosed subprocessor information.</td><td>Hosting, authentication, security and support for Member, device, purchase, Ticket and operational data</td><td>During account use and the periods in Section 3, followed by the contractual backup cycle</td></tr>
-        <tr><td>Google LLC, its affiliates and subprocessors (<a href="https://policies.google.com/privacy?hl=en">privacy information</a>)</td><td>Transferred over the network to the United States and countries where Google data centers are located when a feature is used</td><td>Processing sign-in, payment and refund operational email, integrity, analytics, crash, performance, installation, session, advertising and consent data</td><td>The service-specific periods in Section 3 and periods under Google’s policies and settings</td></tr>
+        <tr><td>Supabase Pte. Ltd., affiliates and subprocessors</td><td><a href="mailto:privacy@supabase.io">privacy@supabase.io</a> · <a href="https://supabase.com/legal/dpa">Data processing agreement</a> · <a href="https://supabase.com/legal/customer-resources/subprocessor-list">Subprocessor list</a></td></tr>
+        <tr><td>Google LLC (United States), affiliates and subprocessors</td><td><a href="mailto:googlekrsupport@google.com">googlekrsupport@google.com</a> · <a href="https://policies.google.com/privacy/additional?hl=en">Contact information for Korean users</a> · <a href="https://firebase.google.com/support/privacy/dpo">Firebase privacy inquiries</a></td></tr>
+        <tr><td>Google Asia Pacific Pte. Ltd. (Singapore): Firebase Crashlytics contracting entity for Korea</td><td>Google contacts above · <a href="https://firebase.google.com/terms/crashlytics">Crashlytics terms</a></td></tr>
     </tbody>
 </table>
-<p>International transfers are made as necessary to perform Service contracts, with separate user consent, or under another basis permitted by applicable law, together with necessary safeguards. Optional international transfers may be refused by withdrawing consent in the relevant settings. Refusal of a transfer essential to the core Service may prevent features such as account sign-in or payment verification; where available, the user may request account deletion.</p>
+
+<h3>Processing Countries</h3>
+<p><strong>Supabase server functions:</strong> Functions may run in the Republic of Korea, Japan, India, Singapore, Australia, Canada, the United States, Germany, Switzerland, Ireland, the United Kingdom, France or Brazil. Platform logs and overseas support may be processed in other locations. <a href="https://supabase.com/docs/guides/functions/regional-invocation">Execution-region information</a></p>
+<p><strong>Firebase processor services:</strong> Possible processing countries and territories are the United States, Canada, Mexico, Brazil, Chile, Uruguay, Argentina, the United Kingdom, Ireland, Belgium, the Netherlands, Luxembourg, France, Germany, Austria, Switzerland, Italy, Spain, Portugal, Denmark, Finland, Sweden, Poland, Czechia, Slovakia, Japan, Taiwan, Hong Kong, India, Indonesia, Thailand, Singapore, Malaysia, the Philippines, Australia, New Zealand, Israel, Qatar, Saudi Arabia and South Africa. Third-party technical-support subprocessors may access data shared by the Controller during a support case. This country scope applies to Firebase processor services.</p>
+<p>For Firebase global processor services, the <a href="https://firebase.google.com/support/privacy">official processing-location guidance</a> and <a href="https://firebase.google.com/terms/subprocessors">subprocessor guidance</a> link to <a href="https://cloud.google.com/terms/subprocessors">Google Group subprocessor processing countries</a>, <a href="https://cloud.google.com/compute/docs/regions-zones">Cloud regions</a> and <a href="https://www.google.com/about/datacenters/locations/">Google data centers</a>.</p>
+<p>Global processing for Google Sign-In, Google Play Billing and Developer API, AdMob and UMP, and consumer Gmail follows the server and data-center descriptions in the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> and <a href="https://policies.google.com/privacy/additional?hl=en">additional information for Korea</a>. Countries hosting <a href="https://www.google.com/about/datacenters/locations/">currently disclosed operational Google data centers</a> are the United States, Chile, Uruguay, Taiwan, Japan, Singapore, Belgium, Denmark, Finland, Germany, Ireland, the Netherlands and the United Kingdom; personal information may be processed at those facilities.</p>
+<h3>Transfer Basis</h3>
+<p>International outsourced processing and storage necessary to perform the user’s contract rely on Article 28-8(1)(3) of Korea’s Personal Information Protection Act for Supabase authentication, service-data storage and queries, payment verification and refunds; Firebase Crashlytics and Performance diagnostics and the required Installations and Sessions processing; and refund-operation reporting through Gmail.</p>
+<p>The same basis applies to Firebase Analytics processing needed to verify delivery of contractual features and entitlements, covering permissions, authentication, payments, entitlements, ad rewards and pause-function operation. It does not apply collectively to general feature-usage or account-deletion trend analysis.</p>
+<p>Google SDKs directly collect AdMob and UMP advertising information. The Controller does not add member account identifiers or custom information to ad requests.</p>
+<h3>Information Transferred and Retention by Service</h3>
+
+<table>
+    <thead><tr><th>Service</th><th>Transfer Timing and Method</th><th>Information and Purpose</th><th>Retention Standards</th></tr></thead>
+    <tbody>
+        <tr><td>Supabase authentication and data storage</td><td>Encrypted network transmission during sign-in, storage and queries</td><td>Authentication identifiers, email, Member, device, purchase and Ticket information: authentication and service data storage and queries</td><td>Item-specific periods in Section 3. Provider backups follow settings and contracts.</td></tr>
+        <tr><td>Supabase server processing and logs</td><td>Transmitted during server requests; access may occur during operations and support</td><td>Member, purchase and refund information needed for requests, request and error records: payment verification, refunds, security and incident response</td><td>Results follow Section 3. Platform logs follow the plan, settings and contract.</td></tr>
+        <tr><td>Google Sign-In</td><td>Encrypted network transmission during sign-in</td><td>Sign-in requests and account authentication information: account authentication</td><td>Authentication information received by the Controller follows Section 3; Google’s own records follow its policies.</td></tr>
+        <tr><td>Google Play Billing·Developer API</td><td>Encrypted network transmission during purchases, subscriptions, verification and refunds</td><td>App-provided obfuscated account and profile identifiers, Google-issued purchase tokens, order, subscription and refund information: purchaser and device linking, payment, entitlement verification and refunds</td><td>The Controller’s transaction evidence follows Section 3; Google’s own records follow its policies and legal obligations.</td></tr>
+        <tr><td>Firebase Analytics</td><td>Collected events transmitted over the network during app use</td><td>App and installation identifiers and usage events: usage analytics</td><td>Analytics standards in Section 3. Aggregated reports may be excluded from retention settings.</td></tr>
+        <tr><td>Firebase Crashlytics — Google Asia Pacific Pte. Ltd.</td><td>Network transmission after crash or error events</td><td>Crash and error information and installation identifiers: incident analysis</td><td>Deletion from live and backup systems begins after 90 days.</td></tr>
+        <tr><td>Firebase Performance — Google LLC</td><td>Network transmission after performance events</td><td>Performance information, installation identifiers and IP address: performance improvement</td><td>Deletion from live and backup systems begins after 30 days for IP-associated information and 60 days for installation-associated and de-identified data.</td></tr>
+        <tr><td>Firebase Installations·Sessions</td><td>Network transmission during installation registration and sessions</td><td>Installation identifiers and session information: linking installations and sessions for Firebase diagnostics and analytics services</td><td>Periods of the linked services apply. Deletion of associated data following an installation identifier deletion request may take up to 180 days across live and backup systems and is separate from Analytics data deletion.</td></tr>
+        <tr><td>AdMob·UMP — direct collection by Google SDK</td><td>Google SDK network transmission during consent updates, ad requests, impressions and interactions</td><td>Advertising, app and device identifiers, IP addresses, ad interactions and consent choices: ad delivery, measurement, consent management and fraud prevention</td><td>Google advertising policies, settings and legal obligations.</td></tr>
+        <tr><td>Gmail refund-operation emails</td><td>Encrypted network transmission when refund operational reports are sent</td><td>Member email, order, product, refund and Ticket information: refund processing and operational review</td><td>Operational emails and attachments follow the evidence retention and deletion standards in Section 4. Provider copies follow contracts and settings.</td></tr>
+    </tbody>
+</table>
+<p>The Controller may request earlier deletion through Supabase service features during its agreement with Supabase. Supabase and its subprocessors delete copies of data covered by that agreement after the 30-day data-return request period following termination of the agreement between the Controller and Supabase. Individual members’ retention and deletion follow Sections 3 and 4; users may request deletion as described in Section 10.</p>
+<p>For transfers requiring separate consent, the Controller explains the information, countries, timing, methods, recipients, contacts, purposes, retention periods, refusal methods and consequences, and obtains consent before transfer. Marketing or advertising consent does not replace international-transfer consent. Consent to optional transfers based on consent may be withdrawn by email as described in Section 10. Refusing a transfer essential to the Service may prevent features such as account sign-in or payment verification; where available, the user may request account deletion. Marketing and advertising settings are described in Section 13.</p>
 <p>External providers may change their subprocessors and data-center countries. If important details such as the recipient, country, information or purpose change, the Controller provides advance notice as required by applicable law and obtains consent before the change where separate consent is required.</p>
+
 
 <h2>9. Marketing Emails</h2>
 <p>Marketing emails are sent only to Members who separately consent. The email address, internal Member identifier, and current consent status and time are used to send discounts, events and service news and apply the current consent status.</p>
-<p>Users may change their choice at any time under <code>[Settings &gt; Terms and Policies &gt; Marketing Policy]</code>. Advertising emails include advertising labels required by law, Maibrains’ name, email address, telephone number and address, Korean and English opt-out guidance, and an easy withdrawal method. No fee is charged for opting out; the recipient is excluded from future messages immediately after the request is received and is notified of the result. At intervals required by law, the Controller reminds users of their marketing consent together with the consent date, sender, and ways to maintain or withdraw consent.</p>
+<p>Users may change their choice under <code>[Settings &gt; Terms and Policies &gt; Marketing Policy]</code> or unsubscribe through the email. Withdrawal is free; users are immediately removed from the recipient list and notified of the result. Consent reminders are sent at intervals required by law. Details are provided in the <a href="marketing-policy-en.html">Consent to Collection and Use of Personal Information for Marketing Purposes</a>.</p>
 
 <h2>10. User Rights and How to Exercise Them</h2>
 <p>Users may exercise the following rights under applicable law.</p>
@@ -179,14 +218,15 @@
 <p>Users in the Republic of Korea may request advice or dispute resolution from the Personal Information Infringement Report Center (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>, dial 118 without an area code), the Personal Information Dispute Mediation Committee (<a href="https://www.kopico.go.kr">kopico.go.kr</a>, 1833-6972), or the Personal Information Protection Commission.</p>
 
 <h2>11. Minors’ Personal Information</h2>
-<p>The Service is not directed to anyone under 18. If the Controller learns that a minor’s personal information was collected without meeting applicable requirements, including consent from a legal representative where required, it deletes information that is not subject to a legal retention obligation.</p>
+<p>The Service is not directed to anyone under 18, and eligibility by country of residence follows <a href="terms-of-service-en.html">Article 4 of the Terms of Service</a>. If the Controller learns that a minor’s personal information was collected without meeting applicable requirements, including consent from a legal representative where required, it deletes information that is not subject to a legal retention obligation.</p>
 
 <h2>12. Security Measures</h2>
 <p>The Controller implements reasonable technical and organizational measures to prevent loss, theft, disclosure and alteration of personal information, including minimizing access rights, authentication and access controls, encryption in transit, log reviews, vulnerability and update management, and processor management.</p>
 
 <h2>13. Automatic Collection Technologies and Choice Management</h2>
 <p>The app and external SDKs may use mobile-device identifiers, including app installation, session and advertising identifiers, and local device storage. Privacy-region information is used to block remote diagnostics collection and provide advertising privacy settings, and is deleted when app data is cleared or the app is removed.</p>
-<p>Users may change permitted processing through the app’s privacy and advertising settings, the device’s advertising privacy and permission settings, and Google settings. Blocking essential storage may prevent session maintenance or security features from working.</p>
+<p>Google’s advertising consent tool (UMP) displays choice screens according to the region and available messages.</p>
+<p>Marketing consent may be changed through the app settings described in Section 9. Where Google provides privacy options, users may change advertising consent through the app’s advertising privacy settings. Device advertising privacy settings and Google settings also provide the advertising choices available in each setting. The app has no separate setting to opt into or stop Firebase Analytics, Performance or Crashlytics collection, and changing advertising settings does not stop that collection. Android permissions may be withdrawn in device settings, which may prevent related features from working. Requests to suspend processing or delete personal information follow Section 10.</p>
 
 <h2>14. Changes to This Policy</h2>
 <p>Changes to this Policy, including their effective date and material details, are generally announced through the service or a linked screen at least 7 days in advance. Material changes to user rights are generally announced at least 30 days in advance, and separate consent is obtained where required.</p>
@@ -195,13 +235,11 @@
 <ul>
     <li>Business name: Maibrains</li>
     <li>Representative and Personal Information Protection Officer: Huh Hyun-beom</li>
-    <li>Business registration number: 864-43-01211</li>
-    <li>Mail-order sales registration number: 2025-부산사하-0220</li>
     <li>Address: Room 104-705, 11, Dadaenakjo 2-gil, Saha-gu, Busan 49504, Republic of Korea</li>
     <li>Telephone: +82 10-5692-6129</li>
     <li>Email: contact@maibrains.studio</li>
 </ul>
-<p>Questions about the Service or personal information must be submitted only by email to contact@maibrains.studio.</p>
+<p>Business details, including registration numbers, are available in <a href="terms-of-service-en.html#operator-information">Article 18 of the Terms of Service</a>.</p>
 
 <h2>Addendum</h2>
 <p>This Privacy Policy is effective as of August 15, 2026.</p>
